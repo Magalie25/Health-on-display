@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/SPC-CPS-logo_27_stars-01-NO TEXT.png">
+    <title>Health on Display</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-logo">
+            <a href="index.html" class="logo">
+                <img alt="Accueil; Health on Display" src="img/SPC-CPS-logo_27_stars.png" style="height: 80px;">
+            </a>
+        </div>
+        
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <ul class="nav-links" id="navLinks">
+            <li><a href="famille_sante.html" class="fr-text">La famille en santé</a><a href="famille_sante.html" class="en-text" style="display:none;">Family and health</a></li>
+            <li><a href="hygiene_vie.html" class="fr-text active">Hygiène de vie</a><a href="hygiene_vie.html" class="en-text active" style="display:none;">Healthy Living</a></li>
+            <li><a href="maladies_infectieuses.html" class="fr-text">Maladies infectieuses</a><a href="maladies_infectieuses.html" class="en-text" style="display:none;">Infectious Diseases</a></li>
+            <li><a href="addictions.html" class="fr-text">Addictions</a><a href="addictions.html" class="en-text" style="display:none;">Addictions</a></li>
+            <li><a href="nutrition.html" class="fr-text">Nutrition</a><a href="nutrition.html" class="en-text" style="display:none;">Nutrition</a></li>
+            <li><a href="climat.html" class="fr-text">Climat</a><a href="climat.html" class="en-text" style="display:none;">Climate</a></li>
+            <li>
+                <div class="language-switch">
+                    <button class="lang-btn">FR</button>
+                    <button class="lang-btn">EN</button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Header -->
+    <header>
+        <h1 class="fr-text">Hygiène de vie</h1>
+        <h1 class="en-text" style="display:none;">Healthy Living</h1>
+        <p class="fr-text">Cultiver des habitudes saines au quotidien</p>
+        <p class="en-text" style="display:none;">Cultivating healthy habits in daily life</p>
+    </header>
+    
+    <!-- Contenu principal -->
+    <div class="main-container">
+        
+        <!-- CARROUSEL 1 - Affiches PORTRAIT -->
+        <div class="carousel-container">
+            <h2 class="part_title">
+                <span class="fr-text">Nos affiches de prévention</span>
+                <span class="en-text" style="display:none;">Our prevention posters</span>
+            </h2>
+            
+            <div class="carousel-wrapper" id="carousel1" data-format="portrait">
+                <!-- Affiche gauche -->
+                <div class="carousel-side-card left" data-index="0" data-format="portrait">
+                    <div class="poster-preview" data-poster-url="img/affiche1.jpg">
+                        <iframe src="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Diabetes/Diabetes_for_General_Public/This_is_how_Diabetes_starts_poster.html" alt="Affiche 1"></iframe>
+                    </div>
+                </div>
+                
+                <!-- Affiche centrale -->
+                <div class="carousel-main-card" data-index="1" data-format="portrait">
+                    <div class="poster-main" data-poster-url="img/affiche2.jpg">
+                        <iframe src="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Diabetes/Diabetes_for_General_Public/This_is_how_Diabetes_starts_poster.html" alt="Affiche 1"></iframe>
+                    </div>
+                    <div class="carousel-card-content">
+                        <h3 class="fr-text">6 affiches maladies non transmissibles</h3>
+                        <h3 class="en-text" style="display:none;">6 posters on non-communicable diseases</h3>
+                        <p class="fr-text">Collection d'affiches sur les facteurs de risque des maladies non transmissibles dans le Pacifique.</p>
+                        <p class="en-text" style="display:none;">Collection of posters on risk factors for non-communicable diseases in the Pacific.</p>
+                        <a href="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Risk_factors/6_affiches_maladies_non_transmissibles.html" target="_blank" class="view-pdf-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span class="fr-text">Voir le PDF</span>
+                            <span class="en-text" style="display:none;">View PDF</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Affiche droite -->
+                <div class="carousel-side-card right" data-index="2" data-format="portrait">
+                    <div class="poster-preview" data-poster-url="img/affiche3.jpg">
+                        <iframe src="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Diabetes/Diabetes_for_General_Public/This_is_how_Diabetes_starts_poster.html" alt="Affiche 1"></iframe>
+                    </div>
+                </div>
+                
+                <!-- Boutons de navigation -->
+                <button class="carousel-nav-btn prev" aria-label="Affiche précédente">&#10094;</button>
+                <button class="carousel-nav-btn next" aria-label="Affiche suivante">&#10095;</button>
+            </div>
+            
+            <!-- Indicateurs -->
+            <div class="carousel-indicators" id="carousel1-dots">
+                <span class="carousel-dot active" data-slide="0"></span>
+                <span class="carousel-dot" data-slide="1"></span>
+                <span class="carousel-dot" data-slide="2"></span>
+            </div>
+        </div>
+        
+        <!-- CARROUSEL 2 - Affiches PAYSAGE -->
+        <div class="carousel-container">
+            <h2 class="part_title">
+                <span class="fr-text">Ressources documentaires</span>
+                <span class="en-text" style="display:none;">Documentary resources</span>
+            </h2>
+            
+            <div class="carousel-wrapper landscape" id="carousel2" data-format="landscape">
+                <!-- Affiche gauche -->
+                <div class="carousel-side-card left" data-index="0" data-format="landscape">
+                    <div class="poster-preview" data-poster-url="img/affiche4.jpg">
+                        <iframe src="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Diabetes/Diabetes_for_General_Public/This_is_how_Diabetes_starts_poster.html" alt="Affiche 1"></iframe>
+                    </div>
+                </div>
+                
+                <!-- Affiche centrale -->
+                <div class="carousel-main-card" data-index="1" data-format="landscape">
+                    <div class="poster-main" data-poster-url="img/affiche5.jpg">
+                        <iframe src="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Diabetes/Diabetes_for_General_Public/This_is_how_Diabetes_starts_poster.html" alt="Affiche 1"></iframe>
+                    </div>
+                    <div class="carousel-card-content">
+                        <h3 class="fr-text">Comment le diabète commence</h3>
+                        <h3 class="en-text" style="display:none;">How diabetes starts</h3>
+                        <p class="fr-text">Affiche expliquant les mécanismes de développement du diabète pour le grand public.</p>
+                        <p class="en-text" style="display:none;">Poster explaining the mechanisms of diabetes development for the general public.</p>
+                        <a href="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Diabetes/Diabetes_for_General_Public/This_is_how_Diabetes_starts_poster.html" target="_blank" class="view-pdf-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span class="fr-text">Voir le PDF</span>
+                            <span class="en-text" style="display:none;">View PDF</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Affiche droite -->
+                <div class="carousel-side-card right" data-index="2" data-format="landscape">
+                    <div class="poster-preview" data-poster-url="img/affiche6.jpg">
+                        <iframe src="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Diabetes/Diabetes_for_General_Public/This_is_how_Diabetes_starts_poster.html" alt="Affiche 1"></iframe>
+                    </div>
+                </div>
+                
+                <!-- Boutons de navigation -->
+                <button class="carousel-nav-btn prev" aria-label="Affiche précédente">&#10094;</button>
+                <button class="carousel-nav-btn next" aria-label="Affiche suivante">&#10095;</button>
+            </div>
+            
+            <!-- Indicateurs -->
+            <div class="carousel-indicators" id="carousel2-dots">
+                <span class="carousel-dot active" data-slide="0"></span>
+                <span class="carousel-dot" data-slide="1"></span>
+                <span class="carousel-dot" data-slide="2"></span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">
+                <i class="fas fa-heartbeat"></i>
+            </div>
+            <h2 class="fr-text">Surveillez votre santé</h2>
+            <h2 class="en-text" style="display:none;">Keep an eye on your health</h2>
+            <p class="fr-text">
+                L'obésité, l'hypertension artérielle, les maladies cardiovasculaires et le diabète sont les maladies les plus répandues dans la région Pacifique. Réaliser régulièrement des bilans de santé chez son médecin traitant et adopter les bons gestes au quotidien permet de réduire l'impact de ces pathologies et de vieillir en bonne santé. La Division santé publique de la CPS œuvre afin de promouvoir la santé pour tous et forme régulièrement les professionnels de santé du Pacifique au dépistage et à la prise en charge des personnes atteintes de maladies chroniques.
+            </p>
+            <p class="en-text" style="display:none;">
+                Obesity, high blood pressure, cardiovascular diseases and diabetes are the most prevalent diseases in the Pacific region. Regular checkups with a general practitioner and good practices on a daily basis can reduce their impact and help ensure healthy ageing. SPC's Public Health Division works to promote good health for all and regularly trains the region's health professionals to screen and treat individuals with chronic illnesses.
+            </p>
+        </div>
+        
+        <h2 class="part_title">
+            <span class="fr-text">Recommandations pour vivre sainement</span>
+            <span class="en-text" style="display:none;">Pacific guidelines for healthy living</span>
+        </h2>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3 class="fr-text">Alimentation équilibrée</h3>
+                <h3 class="en-text" style="display:none;">Balanced diet</h3>
+                <p class="fr-text">
+                    Mangez une variété d'aliments en quantités appropriées chaque jour et choisissez des produits locaux frais. Mangez des légumes et des fruits tous les jours. Choisissez et préparez des aliments avec moins de sel, de matières grasses et de sucre.
+                </p>
+                <p class="en-text" style="display:none;">
+                    Eat a variety of foods in the appropriate amounts each day, and choose fresh local products. Eat vegetables and fruits everyday. Choose and prepare foods with less salt, fat and sugar.
+                </p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-running"></i>
+                </div>
+                <h3 class="fr-text">Activité physique</h3>
+                <h3 class="en-text" style="display:none;">Physical activity</h3>
+                <p class="fr-text">
+                    Faites au moins 30 minutes d'activité d'intensité modérée (par exemple, marche rapide) cinq jours ou plus par semaine.
+                </p>
+                <p class="en-text" style="display:none;">
+                    Do at least 30 minutes of moderate-intensity activity (e.g. brisk walking) on five or more days each week.
+                </p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-glass-water"></i>
+                </div>
+                <h3 class="fr-text">Hydratation</h3>
+                <h3 class="en-text" style="display:none;">Hydration</h3>
+                <p class="fr-text">
+                    Buvez beaucoup d'eau potable et propre chaque jour.
+                </p>
+                <p class="en-text" style="display:none;">
+                    Drink plenty of safe and clean water each day.
+                </p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-baby"></i>
+                </div>
+                <h3 class="fr-text">Allaitement maternel</h3>
+                <h3 class="en-text" style="display:none;">Breastfeeding</h3>
+                <p class="fr-text">
+                    Nourrissez les bébés au lait maternel et rien d'autre pendant les six premiers mois de leur vie.
+                </p>
+                <p class="en-text" style="display:none;">
+                    Feed babies with breast milk and nothing else for the first six months of life.
+                </p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-ban"></i>
+                </div>
+                <h3 class="fr-text">Évitez les substances nocives</h3>
+                <h3 class="en-text" style="display:none;">Avoid harmful substances</h3>
+                <p class="fr-text">
+                    Ne fumez pas, ne mâchez pas de noix de bétel et ne consommez pas de drogues. Réduisez la consommation d'alcool, de kava et de brassage maison. Si vous buvez, évitez la consommation excessive.
+                </p>
+                <p class="en-text" style="display:none;">
+                    Don't smoke, chew betel nut or do drugs. Reduce consumption of alcohol, kava and home brew. If you drink, avoid heavy drinking.
+                </p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="fr-text">Vie sociale</h3>
+                <h3 class="en-text" style="display:none;">Social life</h3>
+                <p class="fr-text">
+                    Assurez-vous de profiter du temps passé avec la famille et les amis. Se détendre et faire partie d'une communauté est bon pour votre santé.
+                </p>
+                <p class="en-text" style="display:none;">
+                    Make sure to enjoy time with family and friends. Relaxing and being part of a community are good for your health.
+                </p>
+            </div>
+        </div>
+        
+        <h2 class="part_title">
+            <span class="fr-text">Adoptez un mode de vie sain</span>
+            <span class="en-text" style="display:none;">Adopt a healthy lifestyle</span>
+        </h2>
+        
+        <div class="card">
+            <div class="card-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h2 class="fr-text">Prévention des maladies non transmissibles</h2>
+            <h2 class="en-text" style="display:none;">Preventing non-communicable diseases</h2>
+            <p class="fr-text">
+                Les maladies non transmissibles (maladies cardiovasculaires, maladies respiratoires chroniques, diabète, cancers) sont la première cause de mortalité dans la région océanienne et sont responsables de 75 % des décès chez les adultes. Cependant, ces maladies sont évitables car elles sont liées à nos comportements. Manger équilibré, pratiquer une activité physique régulière, réduire sa consommation d'alcool et éviter le tabac ; autant de conseils qui permettent de préserver sa santé et que la CPS dispense auprès des populations à travers des affiches et des livrets d'information depuis près de 40 ans.
+            </p>
+            <p class="en-text" style="display:none;">
+                Non-communicable diseases (cardiovascular diseases, chronic respiratory diseases, diabetes and cancer) are the leading cause of death in the Pacific region and responsible for 75 per cent of deaths among adults. These diseases are preventable, however, because they are linked to our behaviour. To help communities live healthy lives, SPC has used posters and information booklets for nearly 40 years, advising people to eat a balanced diet, exercise regularly, reduce alcohol consumption and stop smoking.
+            </p>
+        </div>
+        
+        <h2 class="part_title">
+            <span class="fr-text">Luttez contre le diabète</span>
+            <span class="en-text" style="display:none;">Prevent diabetes</span>
+        </h2>
+        
+        <div class="card">
+            <div class="card-icon">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <h2 class="fr-text">Un enjeu majeur pour le Pacifique</h2>
+            <h2 class="en-text" style="display:none;">A major challenge for the Pacific</h2>
+            <p class="fr-text">
+                Le diabète impacte largement les familles océaniennes et pèse sur l'économie des pays de la région. La prévention du diabète passe par une bonne alimentation, une activité physique régulière et le maintien d'un poids de forme. Dans la région Pacifique, 158,8 millions de personnes vivent avec le diabète et 85,9 millions ne sont pas diagnostiquées.
+            </p>
+            <p class="en-text" style="display:none;">
+                Diabetes has a significant impact on families in the Pacific region and affects the economies of the region. Preventing diabetes involves eating a wholesome diet, exercising regularly, and maintaining a healthy weight. In the Pacific region, 158.8 million people live with diabetes and 85.9 million have not been diagnosed.
+            </p>
+        </div>
+        
+        <div class="info-box">
+            <h3 class="fr-text">L'info en plus</h3>
+            <h3 class="en-text" style="display:none;">Extra info</h3>
+            <p class="fr-text">
+                Les taux de diabète dans le Pacifique sont parmi les plus élevés au monde et 8 pays de la région figurent dans le top 10 mondial.
+            </p>
+            <p class="en-text" style="display:none;">
+                Diabetes rates in the Pacific region are among the highest in the world and eight of the region's countries are among the top 10 worldwide.
+            </p>
+        </div>
+        
+        <!-- Navigation vers autres thématiques -->
+        <div style="text-align: center; margin: 3rem 0;">
+            <h3 class="fr-text" style="color: var(--pantone-293); margin-bottom: 2rem;">Découvrez d'autres thématiques</h3>
+            <h3 class="en-text" style="display:none; color: var(--pantone-293); margin-bottom: 2rem;">Discover other themes</h3>
+            <a href="maladies_infectieuses.html" class="btn fr-text">Maladies infectieuses →</a>
+            <a href="maladies_infectieuses.html" class="btn en-text" style="display:none;">Infectious Diseases →</a>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p class="fr-text">&copy; 2025 La santé s'affiche - Hygiène de vie</p>
+        <p class="en-text" style="display:none;">&copy; 2025 Health on Display - Healthy Living</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
