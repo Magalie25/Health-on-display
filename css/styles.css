@@ -1,0 +1,509 @@
+/* styles.css - Fichier CSS commun pour l'exposition "La santé s'affiche" */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Palette Pantone principale */
+    --pantone-3125: #00AEC7; /* Cyan vif */
+    --pantone-293: #003DA5;  /* Bleu royal */
+    
+    /* Variations et couleurs complémentaires */
+    --cyan-light: #33BFD3;
+    --cyan-lighter: #66CFDF;
+    --blue-light: #3366B8;
+    --blue-dark: #002D7A;
+    
+    /* Couleurs de base */
+    --bg-light: #F5F5F5;
+    --text-dark: #000000;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8f4f8 100%);
+    color: var(--text-dark);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Animation nav */
+#navbar {
+    transition: transform .24s ease, box-shadow .24s ease;
+    will-change: transform;
+    height: 130px;
+    width: 100%;
+    background-image: url('../img/Symbols-MPM-grey.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#navbar.nav--hidden   { transform: translateY(-100%); }
+#navbar.nav--scrolled { box-shadow: 0 6px 20px rgba(0,0,0,.06); }
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 61, 165, 0.3);
+}
+
+nav.hidden {
+    transform: translateY(-100%);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #0046ad;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    box-shadow: 0 6px 20px rgba(0, 174, 199, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+.nav-links li a.active {
+    color: #00AEC7;
+}
+
+.language-switch {
+    display: flex;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.15);
+    padding: 0.5rem;
+    border-radius: 25px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: #0046ad;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.lang-btn.active {
+    color: var(--pantone-293);
+    border: 2px solid var(--pantone-293);
+}
+
+.lang-btn:hover {
+    background: rgba(255,255,255,0.9);
+    color: var(--pantone-293);
+}
+
+/* Menu burger pour mobile */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: var(--pantone-3125);
+    transition: 0.3s;
+}
+
+/* Header */
+header {
+    margin-top: 130px;
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--pantone-293) 0%, var(--pantone-3125) 100%);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/Symbols-MPM-grey.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 68%;
+    opacity: 0.3;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease;
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+header p {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    animation: fadeInUp 1s ease;
+    position: relative;
+    z-index: 1;
+    font-style: italic;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+/* Main Container */
+.main-container {
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 2rem;
+}
+
+.part_title {
+    text-align: center; 
+    margin: 3rem 0 2rem; 
+    font-size: 2rem; 
+    color: var(--pantone-293);
+}
+
+/* Cards */
+.card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 61, 165, 0.1);
+    margin-bottom: 2rem;
+    border-top: 4px solid var(--pantone-3125);
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--pantone-3125) 0%, var(--pantone-293) 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    box-shadow: 0 8px 20px rgba(0, 174, 199, 0.3);
+}
+
+.card h2 {
+    color: var(--pantone-293);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.card h3 {
+    color: var(--pantone-293);
+    margin: 1.5rem 0 1rem;
+    font-size: 1.4rem;
+}
+
+.card p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.card ul {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Thème spécifique pour les cartes thématiques */
+.theme-card {
+    color: var(--pantone-293);
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 61, 165, 0.1);
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.8s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--pantone-3125);
+}
+
+/* Changement de couleur du texte au survol */
+.theme-card:hover h3,
+.theme-card:hover p {
+    color: white;
+}
+
+/* Animation au survol de la carte */
+.theme-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 174, 199, 0.2);
+    background: linear-gradient(135deg, var(--pantone-3125) 0%, var(--pantone-293) 100%);
+    
+}
+
+.theme-icon {
+    border-style: solid;
+    border-color: white;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* Info Box */
+.info-box {
+    background: linear-gradient(135deg, var(--pantone-3125) 2%, var(--pantone-293) 98%);
+    padding: 2rem;
+    border-radius: 20px;
+    color: var(--white);
+    margin: 3rem 0;
+    box-shadow: 0 10px 30px rgba(0, 174, 199, 0.3);
+    animation: slideInRight 1s ease;
+}
+
+.info-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.info-box p {
+    line-height: 1.8;
+    color: var(--white);
+    opacity: 0.95;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--pantone-3125) 0%, var(--pantone-293) 100%);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 174, 199, 0.3);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 174, 199, 0.5);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 130px;
+        left: -100%;
+        flex-direction: column;
+        background: white;
+        width: 100%;
+        padding: 2rem;
+        transition: left 0.3s ease;
+        height: calc(100vh - 80px);
+    }
+    
+    /* Change .active to .menu-open */
+    .nav-links.menu-open {
+        left: 0;
+    }
+    
+    .burger {
+        display: flex;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+    .timeline-events {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .event-card.left {
+        text-align: left;
+        border-right: none;
+        border-left: 4px solid var(--pantone-3125);
+    }
+    
+    .decade-circle {
+        width: 150px;
+        height: 150px;
+        font-size: 2rem;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+    
+    header::before {
+        background-position: center 55%;
+    }
+    
+}
+
+/* Hide/Show language elements */
+.fr-text, .en-text {
+    transition: opacity 0.3s ease;
+}
+
+/*Grid de 4 cards*/
+.cards-grid{
+    display: grid;
+    gap: 18px;                 /* écart horizontal/vertical entre cartes */
+    align-items: stretch;
+}
+
+/* 4 colonnes = toutes les cartes sur UNE ligne */
+.cards-grid.four{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* 2 colonnes = affichage deux par deux */
+.cards-grid.two{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* rendre chaque .card à hauteur égale et propre en grid */
+.cards-grid .card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* responsive : 4→2 sous 1024px, puis 1 sous 640px */
+@media (max-width: 1024px){
+    .cards-grid.four{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 640px){
+    .cards-grid,
+    .cards-grid.four,
+    .cards-grid.two{ grid-template-columns: 1fr; }
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, var(--pantone-293) 0%, var(--blue-dark) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+footer p {
+    opacity: 0.9;
+}
