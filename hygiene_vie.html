@@ -7,7 +7,7 @@
     <title>Health on Display</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/carrousel_pdf.css">
+    <link rel="stylesheet" href="css/carrousel_modern.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -50,112 +50,44 @@
     
     <!-- Contenu principal -->
     <div class="main-container">
-        
-        <!-- CARROUSEL 1 - Affiches PORTRAIT -->
-        <div class="carousel-container">
-            <h2 class="part_title">
-                <span class="fr-text">Nos affiches de prévention</span>
-                <span class="en-text" style="display:none;">Our prevention posters</span>
-            </h2>
+        <div class="portrait-carousel">
+            <button id="prev" class="nav-button prev"><i class="fas fa-chevron-left"></i></button>
+            <button id="next" class="nav-button next"><i class="fas fa-chevron-right"></i></button>
             
-            <div class="carousel-wrapper" id="carousel1" data-format="portrait">
-                <!-- Affiche gauche -->
-                <div class="carousel-side-card left" data-index="0" data-format="portrait">
-                    <div class="poster-preview" data-poster-url="img/affiche1.jpg">
-                        <iframe src="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Diabetes/Diabetes_for_General_Public/This_is_how_Diabetes_starts_poster.html" alt="Affiche 1"></iframe>
+            <div class="slides-container">
+                <div class="slides-track">
+                    <div class="slide">
+                        <img src="img/cps.jpg" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="img/cps2.jpg" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="img/cps.jpg" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="img/cps2.jpg" alt="Image 4">
+                    </div>
+                    <div class="slide">
+                        <img src="img/cps.jpg" alt="Image 5">
+                    </div>
+                    <div class="slide">
+                        <img src="img/cps2.jpg" alt="Image 6">
                     </div>
                 </div>
-                
-                <!-- Affiche centrale -->
-                <div class="carousel-main-card" data-index="1" data-format="portrait">
-                    <div class="poster-main" data-poster-url="img/affiche2.jpg">
-                        <iframe src="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Diabetes/Diabetes_for_General_Public/This_is_how_Diabetes_starts_poster.html" alt="Affiche 1"></iframe>
-                    </div>
-                    <div class="carousel-card-content">
-                        <h3 class="fr-text">6 affiches maladies non transmissibles</h3>
-                        <h3 class="en-text" style="display:none;">6 posters on non-communicable diseases</h3>
-                        <p class="fr-text">Collection d'affiches sur les facteurs de risque des maladies non transmissibles dans le Pacifique.</p>
-                        <p class="en-text" style="display:none;">Collection of posters on risk factors for non-communicable diseases in the Pacific.</p>
-                        <a href="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Risk_factors/6_affiches_maladies_non_transmissibles.html" target="_blank" class="view-pdf-btn">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span class="fr-text">Voir le PDF</span>
-                            <span class="en-text" style="display:none;">View PDF</span>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Affiche droite -->
-                <div class="carousel-side-card right" data-index="2" data-format="portrait">
-                    <div class="poster-preview" data-poster-url="img/affiche3.jpg">
-                        <iframe src="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Diabetes/Diabetes_for_General_Public/This_is_how_Diabetes_starts_poster.html" alt="Affiche 1"></iframe>
-                    </div>
-                </div>
-                
-                <!-- Boutons de navigation -->
-                <button class="carousel-nav-btn prev" aria-label="Affiche précédente">&#10094;</button>
-                <button class="carousel-nav-btn next" aria-label="Affiche suivante">&#10095;</button>
             </div>
             
-            <!-- Indicateurs -->
-            <div class="carousel-indicators" id="carousel1-dots">
-                <span class="carousel-dot active" data-slide="0"></span>
-                <span class="carousel-dot" data-slide="1"></span>
-                <span class="carousel-dot" data-slide="2"></span>
+            <div class="dots">
+                <button class="dot active"></button>
+                <button class="dot"></button>
+                <button class="dot"></button>
+                <button class="dot"></button>
+                <button class="dot"></button>
+                <button class="dot"></button>
             </div>
         </div>
+
         
-        <!-- CARROUSEL 2 - Affiches PAYSAGE -->
-        <div class="carousel-container">
-            <h2 class="part_title">
-                <span class="fr-text">Ressources documentaires</span>
-                <span class="en-text" style="display:none;">Documentary resources</span>
-            </h2>
-            
-            <div class="carousel-wrapper landscape" id="carousel2" data-format="landscape">
-                <!-- Affiche gauche -->
-                <div class="carousel-side-card left" data-index="0" data-format="landscape">
-                    <div class="poster-preview" data-poster-url="img/affiche4.jpg">
-                        <iframe src="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Diabetes/Diabetes_for_General_Public/This_is_how_Diabetes_starts_poster.html" alt="Affiche 1"></iframe>
-                    </div>
-                </div>
-                
-                <!-- Affiche centrale -->
-                <div class="carousel-main-card" data-index="1" data-format="landscape">
-                    <div class="poster-main" data-poster-url="img/affiche5.jpg">
-                        <iframe src="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Diabetes/Diabetes_for_General_Public/This_is_how_Diabetes_starts_poster.html" alt="Affiche 1"></iframe>
-                    </div>
-                    <div class="carousel-card-content">
-                        <h3 class="fr-text">Comment le diabète commence</h3>
-                        <h3 class="en-text" style="display:none;">How diabetes starts</h3>
-                        <p class="fr-text">Affiche expliquant les mécanismes de développement du diabète pour le grand public.</p>
-                        <p class="en-text" style="display:none;">Poster explaining the mechanisms of diabetes development for the general public.</p>
-                        <a href="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Diabetes/Diabetes_for_General_Public/This_is_how_Diabetes_starts_poster.html" target="_blank" class="view-pdf-btn">
-                            <i class="fas fa-external-link-alt"></i>
-                            <span class="fr-text">Voir le PDF</span>
-                            <span class="en-text" style="display:none;">View PDF</span>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Affiche droite -->
-                <div class="carousel-side-card right" data-index="2" data-format="landscape">
-                    <div class="poster-preview" data-poster-url="img/affiche6.jpg">
-                        <iframe src="https://www.spc.int/DigitalLibrary/Doc/PHD/NCD/Diabetes/Diabetes_for_General_Public/This_is_how_Diabetes_starts_poster.html" alt="Affiche 1"></iframe>
-                    </div>
-                </div>
-                
-                <!-- Boutons de navigation -->
-                <button class="carousel-nav-btn prev" aria-label="Affiche précédente">&#10094;</button>
-                <button class="carousel-nav-btn next" aria-label="Affiche suivante">&#10095;</button>
-            </div>
-            
-            <!-- Indicateurs -->
-            <div class="carousel-indicators" id="carousel2-dots">
-                <span class="carousel-dot active" data-slide="0"></span>
-                <span class="carousel-dot" data-slide="1"></span>
-                <span class="carousel-dot" data-slide="2"></span>
-            </div>
-        </div>
 
         <div class="card">
             <div class="card-icon">
@@ -327,5 +259,6 @@
     </footer>
     
     <script src="js/script.js"></script>
+    <script src="js/carrousel_modern.js"></script>
 </body>
 </html>
