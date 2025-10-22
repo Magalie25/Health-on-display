@@ -9,14 +9,17 @@ class PortraitCarousel {
     
     this.current = 0;
     this.slideWidth = 0;
-    this.gapWidth = 20;
+    this.gapWidth = 0; // will read from CSS
     
     this.init();
     this.setupEvents();
-    this.updateLayout();
-    
-    // Start autoplay
-    this.startAutoplay();
+
+    // Wait for images to load so measurements are accurate
+    this.waitForImages().then(() => {
+      this.updateLayout();
+      // Start autoplay after layout
+      this.startAutoplay();
+    });
   }
   
   init() {
@@ -49,8 +52,9 @@ class PortraitCarousel {
     this.carousel.addEventListener('mouseenter', () => this.stopAutoplay());
     this.carousel.addEventListener('mouseleave', () => this.startAutoplay());
     
-    // Update on resize
-    window.addEventListener('resize', () => this.updateLayout());
+  // Update on resize and orientation change
+  window.addEventListener('resize', () => this.updateLayout());
+  window.addEventListener('orientationchange', () => this.updateLayout());
     
     // Prevent ghost clicks
     this.carousel.addEventListener('click', e => {
@@ -62,9 +66,40 @@ class PortraitCarousel {
   }
   
   updateLayout() {
+    // Read gap from CSS variable if available
+    try {
+      const cs = getComputedStyle(this.carousel);
+      const gapValue = cs.getPropertyValue('--gap') || cs.getPropertyValue('--gap');
+      if (gapValue) {
+        // parse like '20px'
+        this.gapWidth = parseFloat(gapValue);
+      }
+    } catch (e) {
+      // fallback
+      this.gapWidth = this.gapWidth || 20;
+    }
+
     const rect = this.slides[0].getBoundingClientRect();
-    this.slideWidth = rect.width + this.gapWidth;
+    // full width including gap
+    this.slideWidth = rect.width + (isNaN(this.gapWidth) ? 0 : this.gapWidth);
     this.centerSlide(this.current);
+  }
+
+  // Wait for all slide images to load (or timeout)
+  waitForImages(timeout = 2000) {
+    const imgs = Array.from(this.carousel.querySelectorAll('img'));
+    const promises = imgs.map(img => {
+      if (img.complete) return Promise.resolve();
+      return new Promise(res => {
+        img.addEventListener('load', res);
+        img.addEventListener('error', res);
+      });
+    });
+
+    return Promise.race([
+      Promise.all(promises),
+      new Promise(res => setTimeout(res, timeout))
+    ]);
   }
   
   centerSlide(index) {
