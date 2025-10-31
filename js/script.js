@@ -58,6 +58,8 @@ Menu, langue, stats, nav sticky/hide-on-scroll, timeline
   // Clic sur le burger (au cas où l’attribut inline serait retiré un jour)
   burger?.addEventListener("click", (e) => {
     e.preventDefault();
+    // stop propagation so global document click handlers don't immediately act
+    e.stopPropagation();
     window.toggleMenu();
   });
   
@@ -259,6 +261,58 @@ Menu, langue, stats, nav sticky/hide-on-scroll, timeline
     }
     if (navLinks) setAttr(navLinks, "aria-hidden", "true");
   }
+
+  // =====================================================================
+  // DROPDOWNS (mobile toggle + keyboard support + ARIA)
+  // =====================================================================
+  function initDropdowns() {
+    const toggles = $$(".dropdown-toggle");
+    if (!toggles.length) return;
+
+    toggles.forEach((btn) => {
+      // initialize ARIA and keyboard role
+      setAttr(btn, 'role', 'button');
+      setAttr(btn, 'tabindex', '0');
+      // ensure explicit aria-expanded initial state
+      if (!btn.hasAttribute('aria-expanded')) btn.setAttribute('aria-expanded', 'false');
+      const parent = btn.closest('.has-dropdown');
+      if (!parent) return;
+
+      // Click toggles on mobile (desktop uses CSS hover)
+      btn.addEventListener('click', (e) => {
+        // Only intercept on small screens where burger is used
+        if (window.innerWidth >= 769) return;
+        e.preventDefault();
+        const isOpen = parent.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      // Keyboard (Enter / Space)
+      btn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
+      });
+    });
+
+    // Close any open dropdowns when resizing to desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 769) {
+        $$(".has-dropdown.open").forEach((h) => {
+          h.classList.remove('open');
+          h.querySelectorAll('.dropdown-toggle').forEach(b => b.setAttribute('aria-expanded','false'));
+        });
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        $$(".has-dropdown.open").forEach((h) => {
+          h.classList.remove('open');
+          h.querySelectorAll('.dropdown-toggle').forEach(b => b.setAttribute('aria-expanded','false'));
+        });
+      }
+    });
+  }
   
   // =====================================================================
   // BOOTSTRAP
@@ -268,6 +322,7 @@ Menu, langue, stats, nav sticky/hide-on-scroll, timeline
     initStatsObserver();
     initHideOnScroll();
     initA11y();
+    initDropdowns();
     initTimeline();
   });
   

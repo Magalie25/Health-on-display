@@ -59,7 +59,6 @@ nav {
     align-items: center;
     z-index: 1000;
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 61, 165, 0.3);
 }
 
 nav.hidden {
@@ -98,10 +97,8 @@ nav.hidden {
 }
 
 .nav-links a:hover {
-    box-shadow: 0 6px 20px rgba(0, 174, 199, 0.5);
-    border-radius: 20px;
-    padding: 10px;
-    background-color: white;
+    color: #00AEC7;
+
 }
 
 .nav-links li a.active {
@@ -148,7 +145,12 @@ nav.hidden {
     padding: 0;
     margin: 0;
     outline: none;
-    box-shadow: none;
+}
+
+/* Keep burger above the sliding panel so it's always clickable */
+.burger {
+    position: relative;
+    z-index: 1400;
 }
 
 .burger span {
@@ -226,7 +228,6 @@ header p {
     background: var(--white);
     padding: 2rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 61, 165, 0.1);
     margin-bottom: 2rem;
     border-top: 4px solid var(--pantone-3125);
 }
@@ -234,7 +235,7 @@ header p {
 .card-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, var(--pantone-3125) 0%, var(--pantone-293) 100%);
+    background: var(--pantone-293);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -242,7 +243,6 @@ header p {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     color: var(--white);
-    box-shadow: 0 8px 20px rgba(0, 174, 199, 0.3);
 }
 
 .card h2 {
@@ -279,7 +279,6 @@ header p {
     background: var(--white);
     padding: 2rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 61, 165, 0.1);
     margin-bottom: 2rem;
     animation: fadeInUp 0.8s ease;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -295,7 +294,6 @@ header p {
 /* Animation au survol de la carte */
 .theme-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0, 174, 199, 0.2);
     background: linear-gradient(135deg, var(--pantone-3125) 0%, var(--pantone-293) 100%);
     
 }
@@ -315,12 +313,11 @@ header p {
 
 /* Info Box */
 .info-box {
-    background: linear-gradient(135deg, var(--pantone-3125) 2%, var(--pantone-293) 98%);
+    background: var(--pantone-293);
     padding: 2rem;
     border-radius: 20px;
     color: var(--white);
     margin: 3rem 0;
-    box-shadow: 0 10px 30px rgba(0, 174, 199, 0.3);
     animation: slideInRight 1s ease;
 }
 
@@ -340,7 +337,7 @@ header p {
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
-    background: linear-gradient(135deg, var(--pantone-3125) 0%, var(--pantone-293) 100%);
+    background: var(--pantone-293);
     color: var(--white);
     text-decoration: none;
     border-radius: 30px;
@@ -349,12 +346,10 @@ header p {
     border: none;
     cursor: pointer;
     font-size: 1rem;
-    box-shadow: 0 5px 15px rgba(0, 174, 199, 0.3);
 }
 
 .btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(0, 174, 199, 0.5);
 }
 
 /* Animations */
@@ -497,13 +492,155 @@ header p {
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, var(--pantone-293) 0%, var(--blue-dark) 100%);
     color: var(--white);
     text-align: center;
     padding: 2rem;
-    margin-top: 4rem;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #003DA5 url('../img/Symbols-MPM-blue.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center 50%;
 }
 
-footer p {
-    opacity: 0.9;
+/* Dropdown menu styles */
+.nav-item {
+    position: relative;
+}
+
+.dropdown-toggle {
+    background: transparent;
+    border: none;
+    color: #0046ad;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.dropdown {
+    position: absolute;
+    left: 0;
+    top: 100%; /* place directly below parent to avoid hover gap */
+    background: white;
+    border-radius: 8px;
+    min-width: 220px;
+    list-style: none;
+    padding: 0.5rem 0;
+    display: none;
+    z-index: 1200;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 0.6rem 1rem;
+    color: #0046ad;
+    font-size: 1rem; /* same typography as menu */
+}
+
+.dropdown li a:hover {
+    background: linear-gradient(90deg, rgba(0,174,199,0.06), rgba(0,174,199,0.02));
+}
+
+/* Show dropdown on hover/focus for desktop */
+@media (min-width: 769px) {
+    /* Show on hover/focus; dropdown is directly adjacent to button (no gap)
+       which prevents accidental closing when moving the mouse down */
+    .nav-item:hover > .dropdown,
+    .nav-item:focus-within > .dropdown {
+        display: block;
+    }
+}
+
+/* Mobile: list view showing menus and submenus together */
+@media (max-width: 768px) {
+    .dropdown {
+        position: relative;
+        top: 0;
+        left: 0;
+        background: transparent;
+        padding: 0.25rem 0 0.5rem 0;
+        min-width: 0;
+        overflow: visible;
+        max-height: none;
+        display: block;
+    }
+
+    /* Top-level toggles become full-width list items */
+    .dropdown-toggle {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 12px 0;
+        background: transparent;
+        border: none;
+    }
+
+    /* Submenu links are indented under their parent */
+    .dropdown li a {
+        padding-left: 1.8rem;
+        background: transparent;
+        border-radius: 4px;
+        margin: 0.12rem 0;
+        display: block;
+        color: #0046ad;
+    }
+
+    .nav-links .nav-item {
+        width: 100%;
+    }
+
+    .nav-links a, .dropdown-toggle {
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+    }
+}
+
+/* Make the open mobile panel scrollable and ensure smooth touch scrolling */
+.nav-links.menu-open {
+    left: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* ensure the opened panel doesn't cover the burger (which must stay interactive) */
+.nav-links.menu-open {
+    z-index: 1200;
+}
+
+/* Make dropdown toggle look like menu links and add a caret */
+.dropdown-toggle {
+    font-size: 1.05rem; /* match menu link size */
+    color: #0046ad;
+    padding: 10px 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dropdown-toggle::after {
+    font-size: 0.9rem;
+    margin-left: 6px;
+    transition: transform 0.22s ease;
+    display: inline-block;
+}
+
+.has-dropdown.open > .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
+
+/* Ensure menu and submenu typography looks consistent */
+.nav-links a, .dropdown-toggle, .dropdown li a {
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.bulletin {
+    text-decoration: none;
+    color: black;
+}
+
+.bulletin:hover {
+    color: #00AEC7;
 }

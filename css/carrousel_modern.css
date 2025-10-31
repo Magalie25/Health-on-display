@@ -31,7 +31,6 @@
   overflow: hidden;
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   transform-origin: center;
   opacity: 0.4;
 }
@@ -46,7 +45,6 @@
 .portrait-carousel .slide.active {
   opacity: 1;
   transform: scale(1.15);
-  box-shadow: 0 20px 50px rgba(0, 61, 165, 0.3);
   cursor: default;
   z-index: 2;
 }
@@ -59,7 +57,6 @@
   height: 44px;
   border-radius: 50%;
   border: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -186,7 +183,6 @@
 
   .portrait-carousel .slide.active {
     transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0, 61, 165, 0.2);
   }
 
   .portrait-carousel .dots {

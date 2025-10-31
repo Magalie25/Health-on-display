@@ -10,14 +10,13 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/menu_theme.css">
     <link rel="stylesheet" href="css/animation.css">
-    <link rel="stylesheet" href="css/timeline.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-logo">
-            <a href="index.html" class="logo">
-                <img alt="Accueil; La santé s'affiche" src="img/SPC-CPS-logo_27_stars.png" style="height: 80px;">
+            <a href="https://www.spc.int" class="logo">
+                <img alt="Logo de la CPS" src="img/SPC-CPS-logo_27_stars.png" style="height: 80px;">
             </a>
         </div>
         
@@ -28,13 +27,28 @@
         </button>
         
         <ul class="nav-links" id="navLinks">
-            <li><a href="famille_sante.html" class="fr-text">La famille en santé</a><a href="famille_sante.html" class="en-text" style="display:none;">Family and health</a></li>
-            <li><a href="hygiene_vie.html" class="fr-text">Hygiène de vie</a><a href="hygiene_vie.html" class="en-text" style="display:none;">Healthy Living</a></li>
-            <li><a href="maladies_infectieuses.html" class="fr-text">Maladies infectieuses</a><a href="maladies_infectieuses.html" class="en-text" style="display:none;">Infectious Diseases</a></li>
-            <li><a href="addictions.html" class="fr-text">Addictions</a><a href="addictions.html" class="en-text" style="display:none;">Addictions</a></li>
-            <li><a href="nutrition.html" class="fr-text">Nutrition</a><a href="nutrition.html" class="en-text" style="display:none;">Nutrition</a></li>
-            <li><a href="climat.html" class="fr-text">Climat</a><a href="climat.html" class="en-text" style="display:none;">Climate</a></li>
-            <li>
+            <li class="nav-item has-dropdown">
+                <button class="nav-link dropdown-toggle fr-text" aria-expanded="false">Présentation</button>
+                <button class="nav-link dropdown-toggle en-text" aria-expanded="false" style="display:none;">Presentation</button>
+                <ul class="dropdown" role="menu">
+                    <li><a href="index.html" class="fr-text active">Exposition La santé s'affiche</a><a href="index.html" class="en-text active" style="display:none;">Health on Display exhibition</a></li>
+                    <li><a href="index.html#division" class="fr-text">Division santé et ses programmes</a><a href="index.html#division" class="en-text" style="display:none;">Public health division & programmes</a></li>
+                    <li><a href="timeline.html" class="fr-text">Chronologie</a><a href="timeline.html" class="en-text" style="display:none;">Timeline</a></li>
+                </ul>
+            </li>
+            <li class="nav-item has-dropdown">
+                <button class="nav-link dropdown-toggle fr-text" aria-expanded="false">La santé s'affiche</button>
+                <button class="nav-link dropdown-toggle en-text" aria-expanded="false" style="display:none;">Health on Display</button>
+                <ul class="dropdown" role="menu">
+                    <li><a href="famille_sante.html" class="fr-text">La famille en santé</a><a href="famille_sante.html" class="en-text" style="display:none;">Family and health</a></li>
+                    <li><a href="hygiene_vie.html" class="fr-text">Hygiène de vie</a><a href="hygiene_vie.html" class="en-text" style="display:none;">Healthy Living</a></li>
+                    <li><a href="maladies_infectieuses.html" class="fr-text">Maladies infectieuses</a><a href="maladies_infectieuses.html" class="en-text" style="display:none;">Infectious Diseases</a></li>
+                    <li><a href="addictions.html" class="fr-text">Addictions</a><a href="addictions.html" class="en-text" style="display:none;">Addictions</a></li>
+                    <li><a href="nutrition.html" class="fr-text">Bien se nourrir</a><a href="nutrition.html" class="en-text" style="display:none;">Eat well</a></li>
+                    <li><a href="climat.html" class="fr-text">Climat</a><a href="climat.html" class="en-text" style="display:none;">Climate</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
                 <div class="language-switch">
                     <button class="lang-btn">FR</button>
                     <button class="lang-btn">EN</button>
@@ -47,9 +61,9 @@
     <header>
         <h1 class="fr-text">La santé s'affiche</h1>
         <h1 class="en-text" style="display:none;">Health on Display</h1>
-        <h2 class="fr-text">Découvrez 78 ans d'engagement pour la santé publique</h2>
-        <p class="fr-text">Rétrospective des supports de communication publiés par la Division santé publique de la Communauté du Pacifique.</p>
-        <h2 class="en-text" style="display:none;">Discover 78 years of commitment to public health</h2>
+        <h2 class="fr-text">Découvrez l'engagement de la CPS pour la santé publique depuis 1947</h2>
+        <p class="fr-text">Rétrospective des supports de communication publiés par la Division Santé Publique de la Communauté du Pacifique.</p>
+        <h2 class="en-text" style="display:none;">Discover CPS's commitment to public health from 1947</h2>
         <p class="en-text">Looking back on the history of communication published by the Public Health Division of the Pacific community.</p>
     </header>
     
@@ -83,7 +97,7 @@
                 </div>
             </div>
             
-            <div class="item active" style="background-image: url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <div class="item active" style="background-image: url('https://cdn.pixabay.com/photo/2025/08/23/18/12/vaccine-9792553_960_720.png');">
                 <div class="content">
                     <h3 class="fr-text name">Famille en santé</h3>
                     <h3 class="en-text name" style="display:none;">Healthy Family</h3>
@@ -162,8 +176,8 @@
         
         <div class="item" style="background-image: url('https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
             <div class="content">
-                <h3 class="fr-text name">Nutrition</h3>
-                <h3 class="en-text name" style="display:none;">Nutrition</h3>
+                <h3 class="fr-text name">Bien se nourrir</h3>
+                <h3 class="en-text name" style="display:none;">Eat well</h3>
                 <p class="fr-text des">
                     L'éducation nutritionnelle et la promotion d'une alimentation saine et équilibrée.
                 </p>
@@ -196,10 +210,7 @@
 </div>
 
 <!-- Histoire de la CPS -->
-<div class="card" style="margin-top: 550px;">
-    <div>
-        <img alt="PHD logo" src="img/icon-PHD-two-coloured_0.png" width="150px" height="150px">
-    </div>
+<div class="card" id="division" style="margin-top: 550px;">
     <h2 class="fr-text">Division santé publique</h2>
     <h2 class="en-text" style="display:none;">Public Health Division</h2>
     <p class="fr-text">
@@ -224,529 +235,6 @@
         The priorities and actions proposed have evolved over the years, based on the regional health situation, 
         the needs expressed by member countries and the financial resources available.
     </p>
-</div>
-
-<!-- Chronologie -->
-<div class="main-container">
-    <div class="wr-custom">
-        <div class="timeline-wrapper">
-            <div class="b-header">
-                <div class="title">
-                    <span class="fr-text">78 ANS AU SERVICE DE LA SANTÉ PUBLIQUE</span>
-                    <span class="en-text" style="display:none;">78 YEARS OF PUBLIC HEALTH SERVICE</span>
-                </div>
-            </div>
-            
-            <!-- 1940s -->
-            <div class="b-decade d-70s">
-                <div class="innerblock">
-                    <div class="content">
-                        <div class="first">
-                            <div class="decade">
-                                <h2>
-                                    <span class="fr-text">1940</span>
-                                    <span class="en-text" style="display:none;">1940s</span>
-                                </h2>
-                            </div>
-                            <p>
-                                <span class="fr-text">Création de la section santé de la CPS avec un programme axé sur l'information épidémiologique</span>
-                                <span class="en-text" style="display:none;">SPC’s Health Section established with a focus on epidemiological information</span>
-                            </p>
-                        </div>
-                        <div class="second">
-                            <img src="img/cps.jpg" alt="1940s">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="b-timeline d-70s">
-                <div class="year y-71 point-t">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>1949</h3>
-                        <p>
-                            <span class="fr-text">Création de la section santé de la CPS avec un programme axé sur l'information épidémiologique, le bien-être maternel et infantile, la tuberculose, la filariose et la nutrition.</span>
-                            <span class="en-text" style="display:none;">SPC's Health Section was set up focusing on epidemiological information, maternal and child wellbeing, tuberculosis, filariasis, and nutrition.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="p1 tline bdr"></div>
-                <div class="p2 tline high xl corner-tr"></div>
-                <div class="p4 tline bdl"></div>
-            </div>
-            
-            <!-- 1950s -->
-            <div class="b-decade d-80s">
-                <div class="innerblock">
-                    <div class="content">
-                        <div class="first">
-                            <div class="decade">
-                                <h2>
-                                    <span class="fr-text">1950</span>
-                                    <span class="en-text" style="display:none;">1950s</span>
-                                </h2>
-                            </div>
-                            <p>
-                                <span class="fr-text">Une décennie d'expansion des programmes de santé publique</span>
-                                <span class="en-text" style="display:none;">A decade of expanding public health programmes</span>
-                            </p>
-                        </div>
-                        <div class="second">
-                            <img src="img/cps.jpg" alt="1950s">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="b-timeline d-80s">
-                <div class="year y-84 point-b">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>1950-1951</h3>
-                        <p>
-                            <span class="fr-text">Ajout de la lèpre, malaria et maladies vénériennes au programme de travail.</span>
-                            <span class="en-text" style="display:none;">Leprosy, malaria and venereal infections added to the work programme.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="year y-85 point-b">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <div class="wrap" style="position: relative;z-index: 1;">
-                            <h3>1954</h3>
-                            <p>
-                                <span class="fr-text">L'éducation sanitaire devient prioritaire avec un programme de formations pour les professionnels.</span>
-                                <span class="en-text" style="display:none;">Health education became a priority with training programmes for health workers.</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="p1 tline bdl"></div>
-                <div class="p2 tline high xr corner-tl"></div>
-                <div class="p5 tline bdr"></div>
-            </div>
-            
-            <!-- 1960s -->
-            <div class="b-decade d-90s">
-                <div class="innerblock">
-                    <div class="content">
-                        <div class="first">
-                            <div class="decade">
-                                <h2>
-                                    <span class="fr-text">1960</span>
-                                    <span class="en-text" style="display:none;">1960s</span>
-                                </h2>
-                            </div>
-                            <p>
-                                <span class="fr-text">Expansion des services de santé maternelle et infantile, hygiène du milieu et programmes d'éradication</span>
-                                <span class="en-text" style="display:none;">Expansion of maternal & child health services, environmental health and eradication programmes</span>
-                            </p>
-                        </div>
-                        <div class="second">
-                            <img src="img/cps.jpg" alt="1960s">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="b-timeline d-90s">
-                <div class="year y-90 point-l">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>1963</h3>
-                        <p>
-                            <span class="fr-text">Enquête OMS/CPS sur les services de protection maternelle et infantile pour réduire la mortalité dans cette population fragile.</span>
-                            <span class="en-text" style="display:none;">WHO/SPC survey of maternal and child health services to reduce mortality.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="year y-92 point-t">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>1964</h3>
-                        <p>
-                            <span class="fr-text">Recrutement d'un ingénieur en santé publique pour l'hygiène du milieu et la gestion des déchets et eaux usées.</span>
-                            <span class="en-text" style="display:none;">Public health engineer recruited for environmental health and waste management.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="year y-94 point-l">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>1965</h3>
-                        <p>
-                            <span class="fr-text">Programme d'éradication du paludisme en Mélanésie, de la filariose en Polynésie et de la tuberculose, lèpre et parasitose.</span>
-                            <span class="en-text" style="display:none;">Eradication programme for malaria (Melanesia), filariasis (Polynesia), tuberculosis, leprosy and parasitosis.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="year y-95 point-t">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <div class="wrap" style="position: relative;z-index: 1;">
-                            <h3>1966</h3>
-                            <p>
-                                <span class="fr-text">Mise en place d'activités sur la santé mentale.</span>
-                                <span class="en-text" style="display:none;">Mental health activities implemented.</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="year y-96 point-l">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>1969</h3>
-                        <p>
-                            <span class="fr-text">Recrutement d'un spécialiste en santé bucco-dentaire.</span>
-                            <span class="en-text" style="display:none;">Oral health specialist recruited.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="p1 tline bdl"></div>
-                <div class="p2 tline xr corner-tl"></div>
-                <div class="p3 tline high tl"></div>
-                <div class="p4 tline xl corner-tr"></div>
-                <div class="p5 tline high tr"></div>
-            </div>
-            
-            <!-- 1970s -->
-            <div class="b-decade d-70s">
-                <div class="innerblock">
-                    <div class="content">
-                        <div class="first">
-                            <div class="decade">
-                                <h2>
-                                    <span class="fr-text">1970</span>
-                                    <span class="en-text" style="display:none;">1970s</span>
-                                </h2>
-                            </div>
-                            <p>
-                                <span class="fr-text">Création du Service d'Information Épidémiologique et premières études sur l'urbanisation</span>
-                                <span class="en-text" style="display:none;">Creation of Epidemiological Information Service and early studies on urbanisation</span>
-                            </p>
-                        </div>
-                        <div class="second">
-                            <img src="img/cps.jpg" alt="1970s">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="b-timeline d-70s">
-                <div class="year y-71 point-t">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>1971</h3>
-                        <p>
-                            <span class="fr-text">Création du Service d'Information Épidémiologique pour collecter les données sur les maladies à déclaration obligatoire.</span>
-                            <span class="en-text" style="display:none;">Epidemiological Information Service created to collect data on notifiable diseases.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="year y-79 point-l">
-                    <div class="wrap" data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease" style="position: relative;z-index: 1;">
-                        <h3>1979</h3>
-                        <p>
-                            <span class="fr-text">Étude sur les effets de l'urbanisation et l'alimentation occidentale sur la santé des habitants du Pacifique.</span>
-                            <span class="en-text" style="display:none;">Study on the effects of urbanisation and western diet on Pacific Islanders.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="p1 tline bdr"></div>
-                <div class="p2 tline high xl corner-tr"></div>
-                <div class="p3 tline xr corner-bl"></div>
-                <div class="p4 tline bdl"></div>
-            </div>
-            
-            <!-- 1980s -->
-            <div class="b-decade d-80s">
-                <div class="innerblock">
-                    <div class="content">
-                        <div class="first">
-                            <div class="decade">
-                                <h2>
-                                    <span class="fr-text">1980</span>
-                                    <span class="en-text" style="display:none;">1980s</span>
-                                </h2>
-                            </div>
-                            <p>
-                                <span class="fr-text">Focus sur les maladies non transmissibles : diabète, cancer et problèmes liés à l'alcool</span>
-                                <span class="en-text" style="display:none;">Focus on non-communicable diseases: diabetes, cancer and alcohol-related issues</span>
-                            </p>
-                        </div>
-                        <div class="second">
-                            <img src="img/cps.jpg" alt="1980s">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="b-timeline d-80s">
-                <div class="year y-84 point-b">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>1980</h3>
-                        <p>
-                            <span class="fr-text">Projet Diagnostic et prévention du diabète pour collecter des données et développer des outils éducatifs.</span>
-                            <span class="en-text" style="display:none;">Diabetes diagnosis and prevention project to collect data and develop educational tools.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="year y-85 point-b">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <div class="wrap" style="position: relative;z-index: 1;">
-                            <h3>1981</h3>
-                            <p>
-                                <span class="fr-text">Création d'un registre des cancers en collaboration avec l'université d'Hawaii et l'École de médecine des Fidji.</span>
-                                <span class="en-text" style="display:none;">Cancer registry developed with University of Hawaii and Fiji School of Medicine.</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="year y-86 point-t">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>1985</h3>
-                        <p>
-                            <span class="fr-text">Conférence CPS/OMS sur les problèmes liés à l'alcool dans les pays océaniens à Nouméa.</span>
-                            <span class="en-text" style="display:none;">SPC/WHO Conference on Alcohol-Related Problems held in Noumea.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="p1 tline bdl"></div>
-                <div class="p2 tline high xr corner-tl"></div>
-                <div class="p3 tline tl"></div>
-                <div class="p4 tline bl corner-br"></div>
-                <div class="p5 tline bdr"></div>
-            </div>
-            
-            <!-- 1990s -->
-            <div class="b-decade d-90s">
-                <div class="innerblock">
-                    <div class="content">
-                        <div class="first">
-                            <div class="decade">
-                                <h2>
-                                    <span class="fr-text new">1990</span>
-                                    <span class="en-text" style="display:none;">1990s</span>
-                                </h2>
-                            </div>
-                            <p>
-                                <span class="fr-text">Lancement de PacNet et intensification de la lutte contre la tuberculose</span>
-                                <span class="en-text" style="display:none;">Launch of PacNet and scaling up tuberculosis control</span>
-                            </p>
-                        </div>
-                        <div class="second">
-                            <img src="img/cps.jpg" alt="1990s">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="b-timeline d-90s">
-                <div class="year y-90 point-l">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>1997</h3>
-                        <p>
-                            <span class="fr-text">Lancement de PacNet pour faciliter le partage rapide d'informations sur les risques sanitaires dans la région.</span>
-                            <span class="en-text" style="display:none;">PacNet launched to facilitate rapid information-sharing on health risks.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="year y-92 point-t">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>1998</h3>
-                        <p>
-                            <span class="fr-text">Projet océanien de lutte contre la tuberculose face à la progression de cette maladie.</span>
-                            <span class="en-text" style="display:none;">Pacific Regional Tuberculosis Control Programme implemented.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="p1 tline bdl"></div>
-                <div class="p2 tline xr corner-tl"></div>
-                <div class="p3 tline high tl"></div>
-                <div class="p5 tline high tl" style="right:50%;"></div>
-                
-            </div>
-            
-            <!-- 2000s -->
-            <div class="b-decade d-70s">
-                <div class="innerblock">
-                    <div class="content">
-                        <div class="first">
-                            <div class="decade">
-                                <h2>
-                                    <span class="fr-text">2000</span>
-                                    <span class="en-text" style="display:none;">2000s</span>
-                                </h2>
-                            </div>
-                            <p>
-                                <span class="fr-text">Développement des réseaux de laboratoires et de lutte contre les infections</span>
-                                <span class="en-text" style="display:none;">Development of laboratory networks and infection control</span>
-                            </p>
-                        </div>
-                        <div class="second">
-                            <img src="img/cps.jpg" alt="2000s">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="b-timeline d-80s">
-                <div class="year y-84 point-b">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>2000</h3>
-                        <p>
-                            <span class="fr-text">Réunion inaugurale du réseau de laboratoires LabNet.</span>
-                            <span class="en-text" style="display:none;">Inaugural meeting of PPHSN Public Health Laboratory Network (LabNet).</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="year y-85 point-b">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <div class="wrap" style="position: relative;z-index: 1;">
-                            <h3>2003</h3>
-                            <p>
-                                <span class="fr-text">Enquête multicentrique sur l'incidence de la leptospirose dans le Pacifique.</span>
-                                <span class="en-text" style="display:none;">Multi-centre survey on leptospirosis incidence in the Pacific.</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="year y-86 point-t">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>2006</h3>
-                        <p>
-                            <span class="fr-text">Création de PICNet, le réseau océanien de lutte contre les infections.</span>
-                            <span class="en-text" style="display:none;">PICNet, Pacific Infection Control Network, created.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="year y-88 point-r">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <div class="wrap" style="position: relative;z-index: 1;">
-                            <h3>2008</h3>
-                            <p>
-                                <span class="fr-text">Programme régional 2-1-22 avec l'OMS pour une réponse coordonnée contre les MNT.</span>
-                                <span class="en-text" style="display:none;">Regional 2-1-22 Programme launched with WHO to combat NCDs.</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="year y-88-2 point-l">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>2009</h3>
-                        <p>
-                            <span class="fr-text">Assistance aux pays contre la grippe pandémique A(H1N1).</span>
-                            <span class="en-text" style="display:none;">Assistance provided to control influenza A (H1N1) pandemic.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="p1 tline bdl"></div>
-                <div class="p2 tline high xr corner-tl"></div>
-                <div class="p3 tline tl"></div>
-                <div class="p4 tline bl corner-br"></div>
-                <div class="p5 tline bdr"></div>
-            </div>
-            
-            <!-- 2010s -->
-            <div class="b-decade d-90s">
-                <div class="innerblock">
-                    <div class="content">
-                        <div class="first">
-                            <div class="decade">
-                                <h2>
-                                    <span class="fr-text">2010</span>
-                                    <span class="en-text" style="display:none;">2010s</span>
-                                </h2>
-                            </div>
-                            <p>
-                                <span class="fr-text">Renforcement de la surveillance et engagement pour le concept des îles-santé</span>
-                                <span class="en-text" style="display:none;">Strengthening surveillance and commitment to the Healthy Islands concept</span>
-                            </p>
-                        </div>
-                        <div class="second">
-                            <img src="img/cps.jpg" alt="2010s">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="b-timeline d-90s">
-                <div class="year y-90 point-l new">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>2012</h3>
-                        <p>
-                            <span class="fr-text">Premier soutien à la surveillance renforcée lors du 11e Festival des arts du Pacifique aux Salomon.</span>
-                            <span class="en-text" style="display:none;">First enhanced surveillance support during 11th Festival of Pacific Arts in Solomon Islands.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="year y-92 point-t">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>2014</h3>
-                        <p>
-                            <span class="fr-text">Cartographie des alertes pour les maladies épidémiques et émergentes en Océanie.</span>
-                            <span class="en-text" style="display:none;">Alert mapping launched for epidemic and emerging diseases in Pacific Islands.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="year y-94 point-l">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>2015</h3>
-                        <p>
-                            <span class="fr-text">Déclaration de Yanuca réaffirmant l'engagement en faveur du concept des îles-santé.</span>
-                            <span class="en-text" style="display:none;">Yanuca Declaration reaffirming commitment to Healthy Islands concept.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="year y-95 point-t">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <div class="wrap" style="position: relative;z-index: 1;">
-                            <h3>2016</h3>
-                            <p>
-                                <span class="fr-text">Premier sommet océanien sur les maladies non transmissibles.</span>
-                                <span class="en-text" style="display:none;">First Pacific NCD Summit held.</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="p1 tline bdl"></div>
-                <div class="p2 tline xr corner-tl"></div>
-                <div class="p3 tline high tl"></div>
-                <div class="p5 tline high tr"></div>
-            </div>
-            
-            <!-- 2020s -->
-            <div class="b-decade d-70s">
-                <div class="innerblock">
-                    <div class="content">
-                        <div class="first">
-                            <div class="decade">
-                                <h2>
-                                    <span class="fr-text">2020</span>
-                                    <span class="en-text" style="display:none;">2020s</span>
-                                </h2>
-                            </div>
-                            <p>
-                                <span class="fr-text">Réponse à la pandémie de COVID-19 et poursuite de l'engagement pour la santé publique</span>
-                                <span class="en-text" style="display:none;">Response to the COVID-19 pandemic and continued commitment to public health</span>
-                            </p>
-                        </div>
-                        <div class="second">
-                            <img src="img/cps.jpg" alt="2020s">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="b-timeline d-70s">
-                <div class="year y-71 point-t new">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
-                        <h3>2020</h3>
-                        <p>
-                            <span class="fr-text">Soutien aux pays pour répondre à la pandémie de COVID-19.</span>
-                            <span class="en-text" style="display:none;">Support provided to countries to respond to COVID-19 pandemic.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="p2 tline high xl corner-tr"></div>
-                <div class="p4 tline bdl arrow-down"></div>
-            </div>
-            
-            <div class="b-timeline-end imxw-s">
-                <div class="innerblock">
-                    <div class="content" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine" style="color: black;">
-                        <h3>
-                            <span class="fr-text">En 2025 et au-delà, nous continuons notre engagement pour améliorer la santé publique dans le Pacifique et servir nos pays membres avec excellence.</span>
-                            <span class="en-text" style="display:none;">In 2025 and beyond, we remain committed to improving public health across the Pacific and serving our member countries with excellence.</span>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
 <!-- Bulletins d'information -->
@@ -792,7 +280,6 @@
     </div>
     
     <div class="card">
-        <a class="bulletin" href="https://www.spc.int/DigitalLibrary/PHD/Collection/PASA">
             <div class="card-icon">
                 <i class="fas fa-ribbon"></i>
             </div>
@@ -802,15 +289,15 @@
                 Le bulletin Alerte au SIDA en Océanie était produit par le programme de lutte contre le VIH, SIDA 
                 et les IST. Le dernier et 40e numéro a été publié en octobre 2013.
             </p>
+            <h4 class="fr-text"><a class="bulletin" href="https://www.spc.int/DigitalLibrary/PHD/Collection/PASA">Accéder aux bulletins</a></h4>
             <p class="en-text" style="display:none;">
                 The Pacific AIDS Alert Bulletin (PASA) was produced by the HIV/AIDS/STI control programme. Its 40th 
                 and final issue was published in October 2013.
             </p>
-        </a>
+            <h4 class="en-text"><a class="bulletin" href="https://www.spc.int/DigitalLibrary/PHD/Collection/PASA">Access the newsletters</a></h4>
     </div>
     
     <div class="card">
-        <a class="bulletin" href="https://www.pphsn.net/fr/ressources/inform-action/#:~:text=Inform%27ACTION%20est%20un%20bulletin,Pacifique%20de%201998%20%C3%A0%202013.">
             <div class="card-icon">
                 <i class="fas fa-newspaper"></i>
             </div>
@@ -821,12 +308,13 @@
                 Il contient plus de 250 articles rédigés par des professionnels de santé océaniens. Le dernier des 
                 37 numéros, sorti en août 2013, était consacré au changement climatique et à la santé.
             </p>
+            <h4 class="fr-text"><a class="bulletin" href="https://www.pphsn.net/fr/ressources/inform-action/#:~:text=Inform%27ACTION%20est%20un%20bulletin,Pacifique%20de%201998%20%C3%A0%202013.">Accéder aux bulletins</a></h4>
             <p class="en-text" style="display:none;">
                 Launched in 1998, Inform'ACTION was the bilingual newsletter of the PPHSN. It contained more than 250 
                 articles written by Pacific Island health professionals. The 37th and final issue, released in August 
                 2013, was devoted to climate change and health.
             </p>
-        </a>
+            <h4 class="en-text"><a class="bulletin" href="https://www.pphsn.net/fr/ressources/inform-action/#:~:text=Inform%27ACTION%20est%20un%20bulletin,Pacifique%20de%201998%20%C3%A0%202013.">Access the newsletters</a></h4>
     </div>
 </div>
 
@@ -1002,119 +490,14 @@
         </div>
     </div>
 </div>
-
-<!--Menu theme en bloc-->
-<h2 style="text-align: center; margin: 3rem 0 2rem; font-size: 2.5rem; color: var(--pantone-293);">
-    <span class="fr-text">Explorez nos thématiques</span>
-    <span class="en-text" style="display:none;">Explore our themes</span>
-</h2>
-
-<div class="grid">
-    <a href="famille_sante.html" style="text-decoration: none;">
-        <div class="theme-card">
-            <div class="card-icon theme-icon">
-                <i class="fas fa-users"></i>
-            </div>
-            <h3 class="fr-text">Famille en santé</h3>
-            <h3 class="en-text" style="display:none;">Healthy Family</h3>
-            <p class="fr-text">
-                Découvrez l'importance de la santé familiale et les campagnes qui ont marqué les générations.
-            </p>
-            <p class="en-text" style="display:none;">
-                Discover the importance of family health and the campaigns that have marked generations.
-            </p>
-        </div>
-    </a>
-    
-    <a href="hygiene_vie.html" style="text-decoration: none;">
-        <div class="theme-card">
-            <div class="card-icon theme-icon">
-                <i class="fas fa-running"></i>
-            </div>
-            <h3 class="fr-text">Hygiène de vie</h3>
-            <h3 class="en-text" style="display:none;">Lifestyle</h3>
-            <p class="fr-text">
-                L'évolution des recommandations sur l'activité physique, le sommeil et le bien-être quotidien.
-            </p>
-            <p class="en-text" style="display:none;">
-                The evolution of recommendations on physical activity, sleep, and daily well-being.
-            </p>
-        </div>
-    </a>
-    
-    <a href="maladies_infectieuses.html" style="text-decoration: none;">
-        <div class="theme-card">
-            <div class="card-icon theme-icon">
-                <i class="fas fa-virus"></i>
-            </div>
-            <h3 class="fr-text">Maladies infectieuses</h3>
-            <h3 class="en-text" style="display:none;">Infectious Diseases</h3>
-            <p class="fr-text">
-                Les grandes campagnes de prévention et de vaccination qui ont sauvé des millions de vies.
-            </p>
-            <p class="en-text" style="display:none;">
-                Major prevention and vaccination campaigns that have saved millions of lives.
-            </p>
-        </div>
-    </a>
-    
-    <a href="addictions.html" style="text-decoration: none;">
-        <div class="theme-card">
-            <div class="card-icon theme-icon">
-                <i class="fas fa-smoking-ban"></i>
-            </div>
-            <h3 class="fr-text">Addictions</h3>
-            <h3 class="en-text" style="display:none;">Addictions</h3>
-            <p class="fr-text">
-                La lutte contre le tabac, l'alcool et les nouvelles formes d'addiction.
-            </p>
-            <p class="en-text" style="display:none;">
-                The fight against tobacco, alcohol, and new forms of addiction.
-            </p>
-        </div>
-    </a>
-    
-    <a href="nutrition.html" style="text-decoration: none;">
-        <div class="theme-card">
-            <div class="card-icon theme-icon">
-                <i class="fas fa-apple-alt"></i>
-            </div>
-            <h3 class="fr-text">Nutrition</h3>
-            <h3 class="en-text" style="display:none;">Nutrition</h3>
-            <p class="fr-text">
-                L'éducation nutritionnelle et la promotion d'une alimentation saine et équilibrée.
-            </p>
-            <p class="en-text" style="display:none;">
-                Nutritional education and the promotion of healthy and balanced eating.
-            </p>
-        </div>
-    </a>
-    
-    <a href="climat.html" style="text-decoration: none;">
-        <div class="theme-card">
-            <div class="card-icon theme-icon">
-                <i class="fas fa-globe-americas"></i>
-            </div>
-            <h3 class="fr-text">Climat</h3>
-            <h3 class="en-text" style="display:none;">Climate</h3>
-            <p class="fr-text">
-                Les impacts du changement climatique sur la santé publique et les actions nécessaires.
-            </p>
-            <p class="en-text" style="display:none;">
-                The impacts of climate change on public health and necessary actions.
-            </p>
-        </div>
-    </a>
-</div>
 </div>
 
 <!-- Footer -->
 <footer>
-    <p class="fr-text">&copy; 2025 La santé s'affiche - Exposition digitale</p>
-    <p class="en-text" style="display:none;">&copy; 2025 Health on Display - Digital Exhibition</p>
+    <p class="fr-text">&copy; La santé s'affiche - Exposition digitale</p>
+    <p class="en-text" style="display:none;">&copy; Health on Display - Digital Exhibition</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="js/script.js"></script>
 <script src="js/menu_theme.js"></script>
 </body>
