@@ -277,12 +277,9 @@ header p {
 .theme-card {
     color: var(--pantone-293);
     background: var(--white);
-    padding: 2rem;
     border-radius: 20px;
-    margin-bottom: 2rem;
     animation: fadeInUp 0.8s ease;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-top: 4px solid var(--pantone-3125);
 }
 
 /* Changement de couleur du texte au survol */
@@ -309,6 +306,95 @@ header p {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin: 2rem 0;
+}
+
+/* Navigation theme container et grid */
+.theme-navigation-container {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 20px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--pantone-3125);
+}
+
+.theme-navigation-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* Tooltip styles */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background: var(--pantone-293);
+    color: var(--white);
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    /* Animation */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--pantone-293) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Theme card modifications for tooltips */
+.theme-card {
+    position: relative;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .theme-navigation-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .theme-navigation-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .theme-navigation-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Info Box */
