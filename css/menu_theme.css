@@ -11,6 +11,31 @@
     border-radius: 20px;
 }
 
+@media (max-width: 1024px) {
+    .menu {
+        width: 80%;
+        max-width: 800px;
+        height: 400px;
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        width: 90%;
+        height: 350px;
+        margin-top: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        width: 95%;
+        height: 300px;
+        margin-top: 150px;
+    }
+}
+
 .menu .slide {
     border-radius: 20px;
 }
@@ -50,6 +75,30 @@
     padding-bottom: 9.5vh;
 }
 
+@media (max-width: 1024px) {
+    .content {
+        height: 400px;
+        width: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        height: 350px;
+        width: 220px;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        height: 300px;
+        width: 200px;
+        padding: 3vh 1vw;
+    }
+}
+
 .item .content {
     position: absolute;
     top: 50%;
@@ -81,6 +130,37 @@
     animation: animate 1s ease-in-out 0.3s 1 forwards;
     width: 280px;
     color: black;
+}
+
+@media (max-width: 1024px) {
+    .content .name {
+        font-size: 32px;
+    }
+    .content .des {
+        width: 240px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content .name {
+        font-size: 28px;
+    }
+    .content .des {
+        width: 200px;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content .name {
+        font-size: 24px;
+    }
+    .content .des {
+        width: 180px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
 }
 
 .content button {
