@@ -46,6 +46,24 @@ body {
 #navbar.nav--hidden   { transform: translateY(-100%); }
 #navbar.nav--scrolled { box-shadow: 0 6px 20px rgba(0,0,0,.06); }
 
+@media (max-width: 1024px) {
+    #navbar {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        width: 40%;
+    }
+}
+
 /* Navigation */
 nav {
     position: fixed;
