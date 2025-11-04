@@ -48,19 +48,19 @@ body {
 
 @media (max-width: 1024px) {
     #navbar {
-        width: 90%;
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
     #navbar {
-        width: 75%;
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     #navbar {
-        width: 60%;
+        width: 100%;
     }
 }
 
