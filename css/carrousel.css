@@ -17,7 +17,8 @@
 }
 
 .slider-item {
-    min-width: 200px;
+    top: 0;
+    min-width: 350px;
     aspect-ratio: 210/297;
     border-radius: 12px;
     overflow: hidden;
