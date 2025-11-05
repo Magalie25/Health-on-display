@@ -439,7 +439,7 @@ header p {
     background: var(--pantone-293);
     color: var(--white);
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 6px;
     font-weight: bold;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
