@@ -1,351 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/SPC-CPS-logo_27_stars-01-NO TEXT.png">
-    <title>Health on Display</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/animation.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="img/SPC-CPS-logo_27_stars-01-NO TEXT.png">
+<title>Health on Display</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/animation.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-logo">
-            <a href="https://www.spc.int" class="logo">
-                <img alt="Logo de la CPS" src="img/SPC-CPS-logo_27_stars.png" style="height: 80px;">
-            </a>
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="nav-logo">
+        <a href="https://www.spc.int" class="logo">
+            <img alt="Logo de la CPS" src="img/SPC-CPS-logo_27_stars.png" style="height: 80px;">
+        </a>
+    </div>
+    
+    <button class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
+    <ul class="nav-links" id="navLinks">
+        <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle fr-text" aria-expanded="false">Présentation</button>
+            <button class="nav-link dropdown-toggle en-text" aria-expanded="false" style="display:none;">Presentation</button>
+            <ul class="dropdown" role="menu">
+                <li><a href="index.html" class="fr-text">Exposition La santé s'affiche</a><a href="index.html" class="en-text" style="display:none;">Health on Display exhibition</a></li>
+                <li><a href="division_sante.html" class="fr-text active">Division santé et ses programmes</a><a href="division_sante.html" class="en-text active" style="display:none;">Public health division & programmes</a></li>
+                <li><a href="timeline.html" class="fr-text">Chronologie</a><a href="timeline.html" class="en-text" style="display:none;">Timeline</a></li>
+            </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle fr-text" aria-expanded="false">La santé s'affiche</button>
+            <button class="nav-link dropdown-toggle en-text" aria-expanded="false" style="display:none;">Health on Display</button>
+            <ul class="dropdown" role="menu">
+                <li><a href="famille_sante.html" class="fr-text">La famille en santé</a><a href="famille_sante.html" class="en-text" style="display:none;">Family and health</a></li>
+                <li><a href="hygiene_vie.html" class="fr-text">Hygiène de vie</a><a href="hygiene_vie.html" class="en-text" style="display:none;">Healthy Living</a></li>
+                <li><a href="maladies_infectieuses.html" class="fr-text">Maladies infectieuses</a><a href="maladies_infectieuses.html" class="en-text" style="display:none;">Infectious Diseases</a></li>
+                <li><a href="addictions.html" class="fr-text">Combattre les addictions</a><a href="addictions.html" class="en-text" style="display:none;">Combatting addictions</a></li>
+                <li><a href="nutrition.html" class="fr-text">Bien se nourrir</a><a href="nutrition.html" class="en-text" style="display:none;">Eat well</a></li>
+                <li><a href="climat.html" class="fr-text">Santé et changement climatique</a><a href="climat.html" class="en-text" style="display:none;">Health and climate change</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <div class="language-switch">
+                <button class="lang-btn">EN</button>
+                <button class="lang-btn">FR</button>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<!-- Header -->
+<header>
+    <h1 class="fr-text">Présentation de la Division Santé Publique</h1>
+    <h1 class="en-text" style="display:none;">Presentation of the Public Health Division </h1>
+</header>
+
+<!-- Introduction -->
+<div class="main-container">
+    
+    <!-- Histoire de la CPS -->
+    <div class="card" id="division">
+        <h2 class="fr-text">Division santé publique</h2>
+        <h2 class="en-text" style="display:none;">Public Health Division</h2>
+        <p class="fr-text">
+            La Division santé publique a été créée en janvier 2009 et remplace le Département santé publique, 
+            autrefois rattaché à la Division ressources sociales de la CPS. En établissant cette nouvelle division, 
+            la CPS reconnaît que le développement durable dans tous les secteurs n'est possible que si les populations 
+            océaniennes sont en bonne santé et ont accès à des systèmes de santé publique de qualité.
+        </p>
+        <p class="en-text" style="display:none;">
+            The Public Health Division was set up in January 2009, replacing the Public Health Programme, which was 
+            formerly part of SPC's Social Resources Division. By creating this new division, SPC acknowledged that 
+            sustainable development in all sectors would be possible only if the people of the Pacific were healthy 
+            and had access to high-quality public health systems.
+        </p>
+        <p class="fr-text">
+            Dès sa création en 1947, la CPS a mis en place des projets visant à améliorer la santé des Océaniens. 
+            Cependant, les priorités et actions proposées ont évolué au fil des années en fonction du contexte 
+            sanitaire régional, des besoins exprimés par les pays membres et des ressources financières disponibles.
+        </p>
+        <p class="en-text" style="display:none;">
+            Since its founding in 1947, SPC has implemented projects that aim to improve Pacific Islanders' health. 
+            The priorities and actions proposed have evolved over the years, based on the regional health situation, 
+            the needs expressed by member countries and the financial resources available.
+        </p>
+    </div>
+    
+    <!-- Information programmes -->
+    <h2 style="text-align: center; margin: 3rem 0 2rem; font-size: 2.5rem; color: var(--pantone-293);">
+        <span class="fr-text">Demandez le programme !</span>
+        <span class="en-text" style="display:none;">Get the programme!</span>
+    </h2>
+    
+    <!-- Section Programmes -->
+    <div class="programs-section">
+        
+        <!-- Programme 1: Maladies non transmissibles -->
+        <div class="program-item layout-65-35">
+            <div class="program-content">
+                <h3 class="fr-text">Programme de prévention et de lutte contre les maladies non transmissibles</h3>
+                <h3 class="en-text" style="display:none;">Non-communicable Diseases Programme</h3>
+                <p class="fr-text">
+                    Le Programme de prévention et de lutte contre les maladies non 
+                    transmissibles (MNT) vise à accompagner l'Océanie dans les efforts déployés 
+                    pour combattre notamment les maladies cardiovasculaires, le cancer, le diabète et 
+                    les maladies pulmonaires chroniques ainsi que leurs facteurs de risque principaux, 
+                    tels que la consommation d'aliments et de boissons néfastes pour la santé, le manque 
+                    d'activité physique ainsi que la consommation de tabac et d'alcool. Le Programme 
+                    permet d'apporter un appui concret aux pays membres, afin qu'ils puissent soutenir 
+                    l'engagement de leurs dirigeants politiques dans ce domaine, mieux mettre en 
+                    application leurs stratégies et lois, renforcer leurs capacités (mise à disposition de 
+                    ressources et formations), intensifier les échanges avec les différents services publics 
+                    et avec les communautés, et consolider le suivi et l'évaluation des mesures prises 
+                    contre les MNT.
+                </p>
+                <p class="en-text" style="display:none;">
+                    The Non-communicable Diseases (NCDs) prevention and control programme supports the Pacific 
+                    region in its efforts to tackle diseases such as heart disease, cancer, diabetes and chronic lung 
+                    diseases, and their key risk factors, including the consumption of unhealthy foods and drinks, 
+                    lack of exercise, smoking and drinking. The NCD programme actively supports member countries 
+                    to improve the commitment of their political leaders, enhance implementation of policies and 
+                    laws, strengthen capacity through the provision of resources and training, increase engagement 
+                    with government and communities, develop innovative technology, and strengthen monitoring 
+                    and evaluation of NCD interventions.
+                </p>
+            </div>
+            
+            <div class="info-box">
+                <p class="fr-text">
+                    En réponse à la crise des MNT, la CPS a lancé le projet régional Wake Up! en 2017. Ce projet a permis d'apprendre à de jeunes participants des techniques de communication, 
+                    le but étant qu'ils puissent sensibiliser leurs communautés aux MNT en recourant à diverses techniques artistiques, telles que la création de vidéos, la peinture et le 
+                    dessin. En prenant soin de leur santé dès leur plus jeune âge et en cultivant un mode de vie sain, les jeunes peuvent joindre le geste à la parole et servir de modèles pour leurs pairs.
+                </p>
+                <p class="en-text" style="display:none;">
+                    In response to the NCD crisis, we launched the Wake Up! Regional Project in 2017. We trained and educated young people on communication 
+                    techniques to raise communities' awareness about NCDs through artforms like films, painting, drawing, etc. By adopting and sustaining healthy behaviours 
+                    early in life, young people can walk the talk and become role models for their peers.
+                </p>
+            </div>
         </div>
         
-        <button class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <!-- Programme 2: Surveillance, préparation et réponse -->
+        <div class="program-item layout-65-35">
+            <div class="program-content">
+                <h3 class="fr-text">Programme surveillance, préparation et réponse</h3>
+                <h3 class="en-text" style="display:none;">Surveillance, Preparedness and Response Programme</h3>
+                <p class="fr-text">
+                    Dans le cadre du Programme surveillance, préparation et réponse (SPRP), un appui est apporté aux pays concernant les activités qu'ils mènent en matière de sécurité sanitaire, pour permettre une détection précoce des flambées épidémiques ainsi qu'une alerte et une intervention rapide. Il s'agit notamment de faciliter 
+                    le partage d'informations dans la région, d'animer des formations en épidémiologie de terrain, en entomologie, en communication sur les risques et mobilisation communautaire, d'appuyer la riposte des pays face aux épidémies et aux catastrophes naturelles, ainsi que d'élaborer des outils innovants pour les systèmes d'alerte précoce sur 
+                    les maladies. Depuis 2012, un appui est aussi apporté aux pays de la région quant à la mise en œuvre d'une surveillance renforcée pendant les grands rassemblements comme les Jeux du Pacifique. Le SPRP fait office de point de contact pour le Réseau océanien de surveillance de la santé publique depuis la création de celui-ci en 1996.
+                </p>
+                <p class="en-text" style="display:none;">
+                    The Surveillance, Preparedness and Response Programme (SPRP) assists countries with their health security efforts for early detection, alertness and 
+                    response to disease outbreaks. This is achieved by facilitating information-sharing in the region, delivering training in field epidemiology, entomology, risk communication and community engagement, supporting 
+                    countries' responses to outbreaks and natural disasters and developing innovative tools for early disease warning systems. Since 2012, the team has also supported 
+                    countries to implement enhanced surveillance during mass gatherings like the Pacific Games. SPRP has acted as a focal point for the Pacific Public Health Surveillance Network since it began in 1996.
+                </p>
+            </div>
+            
+            <div class="info-box">
+                <p class="fr-text">
+                    La CPS apporte un appui aux Îles Salomon en vue de la préparation et de la mise en œuvre d'une surveillance renforcée pour les Jeux du Pacifique 2023, notamment en procédant à une évaluation des risques, en mettant au point des outils, en élaborant 
+                    des directives et en organisant des formations préalablement à l'événement, dans le cadre d'une collaboration avec le ministère de la Santé et des Services médicaux, le but étant de renforcer le système de surveillance.
+                </p>
+                <p class="en-text" style="display:none;">
+                    To support Solomon Islands with the preparation and implementation of enhanced surveillance during the 2023 Pacific Games, we are working with the Ministry of 
+                    Health and Medical Services to conduct risk assessment, develop tools and guidelines and roll out training in the lead-up to the event. This will contribute towards a stronger surveillance system
+                </p>
+            </div>
+        </div>
         
-        <ul class="nav-links" id="navLinks">
-            <li class="nav-item has-dropdown">
-                <button class="nav-link dropdown-toggle fr-text" aria-expanded="false">Présentation</button>
-                <button class="nav-link dropdown-toggle en-text" aria-expanded="false" style="display:none;">Presentation</button>
-                <ul class="dropdown" role="menu">
-                    <li><a href="index.html" class="fr-text">Exposition La santé s'affiche</a><a href="index.html" class="en-text" style="display:none;">Health on Display exhibition</a></li>
-                    <li><a href="division_sante.html" class="fr-text active">Division santé et ses programmes</a><a href="division_sante.html" class="en-text active" style="display:none;">Public health division & programmes</a></li>
-                    <li><a href="timeline.html" class="fr-text">Chronologie</a><a href="timeline.html" class="en-text" style="display:none;">Timeline</a></li>
-                </ul>
-            </li>
-            <li class="nav-item has-dropdown">
-                <button class="nav-link dropdown-toggle fr-text" aria-expanded="false">La santé s'affiche</button>
-                <button class="nav-link dropdown-toggle en-text" aria-expanded="false" style="display:none;">Health on Display</button>
-                <ul class="dropdown" role="menu">
-                    <li><a href="famille_sante.html" class="fr-text">La famille en santé</a><a href="famille_sante.html" class="en-text" style="display:none;">Family and health</a></li>
-                    <li><a href="hygiene_vie.html" class="fr-text">Hygiène de vie</a><a href="hygiene_vie.html" class="en-text" style="display:none;">Healthy Living</a></li>
-                    <li><a href="maladies_infectieuses.html" class="fr-text">Maladies infectieuses</a><a href="maladies_infectieuses.html" class="en-text" style="display:none;">Infectious Diseases</a></li>
-                    <li><a href="addictions.html" class="fr-text">Combattre les addictions</a><a href="addictions.html" class="en-text" style="display:none;">Combatting addictions</a></li>
-                    <li><a href="nutrition.html" class="fr-text">Bien se nourrir</a><a href="nutrition.html" class="en-text" style="display:none;">Eat well</a></li>
-                    <li><a href="climat.html" class="fr-text">Santé et changement climatique</a><a href="climat.html" class="en-text" style="display:none;">Health and climate change</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <div class="language-switch">
-                    <button class="lang-btn">EN</button>
-                    <button class="lang-btn">FR</button>
+        <!-- Programme 3: Renforcement des systèmes de santé -->
+        <div class="program-item layout-65-35">
+            <div class="program-content">
+                <h3 class="fr-text">Programme de renforcement des systèmes de santé</h3>
+                <h3 class="en-text" style="display:none;">Health Systems Strengthening Programme</h3>
+                <p class="fr-text">
+                    Le Programme de renforcement des systèmes de santé (HSSP) vise à améliorer la santé au travers d'activités axées sur le leadership, les systèmes d'information 
+                    sanitaire, le personnel de santé, la communication et la planification. L'équipe du Programme prend part aux réunions des responsables océaniens de la santé en vue de définir des priorités et de coordonner les efforts, et apporte un appui 
+                    à l'élaboration de systèmes d'information sanitaire, à la planification, au suivi et à l'évaluation. Des outils tels que les médias, la communication narrative et les réseaux sociaux sont utilisés pour faire connaître les activités du Programme. Les activités de planification, de suivi-évaluation et d'apprentissage permettent 
+                    d'orienter la Division dans l'élaboration de plans de travail et de rapports ainsi que pour ce qui est d'adapter ses activités afin d'accompagner au mieux le développement de leurs services de santé. Les efforts constants déployés permettent de renforcer la prestation de services de santé et d'améliorer la santé dans la région.    
+                </p>
+                <p class="en-text" style="display:none;">
+                    The Health Systems Strengthening Programme (HSSP) aims for better health by focusing on leadership, health information systems, workforce, communication, and planning. It invests in Pacific health leaders' meetings to set priorities and coordinate efforts. HSSP supports health information 
+                    system development, planning, monitoring, and evaluation. It uses communication tools such as the media, storytelling, and social media to showcase their work. PMEL guides the Public Health Division with work 
+                    plans and reporting, adapting to support health sector development in the Pacific. Its consistent efforts help strengthen health services delivery and improve health in the region    
+                </p>
+            </div>
+            
+            <div class="info-box">
+                <p class="fr-text">
+                    En 2023, les activités menées par le Programme HSSP ont contribué au renforcement des systèmes de santé océaniens, notamment grâce à la Réunion des directeurs de la santé du Pacifique et au 
+                    Réseau océanien d'information sanitaire. Des réunions de réflexion ont été organisées, le but étant d'évaluer les progrès accomplis, les difficultés rencontrées et les enseignements tirés tout en élaborant 
+                    des stratégies et en mettant en avant des exemples de réussite. Dans l'après COVID-19, le HSSP sera à la tête de plusieurs domaines de spécialité. Les produits de communication créés visent à refléter les 
+                    différentes voix océaniennes, les réussites et les enseignements tirés en Océanie, de manière à améliorer la visibilité des activités réalisées
+                </p>
+                <p class="en-text" style="display:none;">
+                    In 2023, HSSP strengthened Pacific health systems through meetings such as the Pacific Heads of Health meeting and the Pacific Health Information Network. They held reflection meetings to assess progress, challenges and learning, developing strategies and highlighting success stories. 
+                    HSSP will lead niche areas in post-COVID-19. Communication products capture Pacific voices, successes and lessons for visibility    
+                </p>
+            </div>
+        </div>
+        
+        <!-- Programme 4: Services cliniques -->
+        <div class="program-item layout-65-35">
+            <div class="program-content">
+                <h3 class="fr-text">Programme services cliniques</h3>
+                <h3 class="en-text" style="display:none;">Clinical Services Programme</h3>
+                <p class="fr-text">
+                    Le Programme services cliniques (CSP) apporte un appui aux pays océaniens dans l'offre et le renforcement des services cliniques. Le but est de fournir des soins de santé de qualité, abordables et accessibles, notamment pour ce qui est des 
+                    services cliniques, des soins infirmiers et des services de lutte anti-infectieuse. Le Programme CSP participe au renforcement des capacités des effectifs, ainsi qu'à l'amélioration de 
+                    la formation et du leadership grâce au perfectionnement professionnel et à la formation médicale continue. Il contribue au déploiement de cliniciens et de personnel infirmier en cas d'urgence sanitaire et à l'apport d'un appui en ce qui concerne le matériel biomédical, les achats et la mise en œuvre des lignes directrices relatives à la lutte anti-infectieuse    
+                </p>
+                <p class="en-text" style="display:none;">
+                    The Clinical Services Program (CSP) assists Pacific countries in delivering and strengthening clinical services. It focuses on good quality, affordable and accessible healthcare, including clinical, 
+                    nursing, and IPC services. CSP enhances workforce, education and leadership through professional development and continuing medical education. It facilitates 
+                    clinician and nursing deployment during health emergencies and provides support for biomedical equipment, procurement and IPC guidelines implementation.     
+                </p>
+            </div>
+            
+            <div class="info-box">
+                <p class="fr-text">
+                    En réponse à une demande d'appui dans le domaine des services cliniques, des outils d'évaluation des besoins ont été mis au point dans le cadre du Programme, le but étant de déterminer ce qui fonctionne bien, ce qui fait défaut et ce qui pose problème dans les pays, pour ensuite pouvoir leur prêter assistance en élaborant des lignes directrices et des stratégies ainsi qu'en facilitant l'organisation de formations vouées à renforcer les capacités des effectifs dans ces domaines précis    
+                </p>
+                <p class="en-text" style="display:none;">
+                    In response to the demand for clinical services support, we have developed needs assessment tools to understand what works well, what are the gaps and challenges and how we can assist through guidance, policies and training to improve workforce capacity in these specific areas
+                </p>
+            </div>
+        </div>
+        
+        <!-- Programme 5: Renforcement des laboratoires -->
+        <div class="program-item layout-65-35">
+            <div class="program-content">
+                <h3 class="fr-text">Programme de renforcement des laboratoires</h3>
+                <h3 class="en-text" style="display:none;">Laboratory Strengthening Programme</h3>
+                <p class="fr-text">
+                    La pandémie de COVID-19 a révélé le rôle essentiel que jouent les laboratoires dans la sécurité sanitaire. Les activités du Programme de renforcement des laboratoires (LSP) sont axées sur la mise en œuvre et l'évaluation de systèmes de gestion de la qualité en laboratoire, le 
+                    but étant d'aboutir au respect total de la norme ISO 15189. Elles visent également à faciliter le transfert d'échantillons et à aider les transporteurs de substances infectieuses à obtenir l'agrément nécessaire conformément 
+                    à la réglementation de l'Association du transport aérien international (IATA). En cas d'épidémie, le Programme LSP fournit des conseils et des directives aux pays au sujet du transfert d'échantillons et assure la prise en charge des tests réalisés dans les laboratoires de référence. Le Programme apporte en outre un appui à la mise en place de nouveaux laboratoires d'analyse et à la surveillance de la résistance aux antimicrobiens en organisant des formations et en élaborant un antibiogramme de manière à améliorer le dépistage et la surveillance de la résistance aux antimicrobiens dans la région.    
+                </p>
+                <p class="en-text" style="display:none;">
+                    The COVID-19 pandemic highlighted the crucial role of laboratory services in ensuring health security. The Laboratory Strengthening Programme (LSP) focuses on implementing and assessing laboratory quality management systems, aiming for ISO 15189 standards. 
+                    It also facilitates specimen referrals and supports certification of laboratory shippers according to International Air Transport Association (IATA) regulations. During outbreaks, LSP advises and guides countries on specimen referral and covers testing costs in reference labs. Additionally, the programme aids in setting up new 
+                    testing laboratories and supports antimicrobial resistance (AMR) surveillance through training and the development of an antibiogram, leading to improved AMR testing and surveillance in the region.
+                </p>
+            </div>
+            
+            <div class="info-box">
+                <p class="fr-text">
+                    Le Programme LSP apporte un appui aux laboratoires des États et Territoires insulaires océaniens en cas d'urgence sanitaire en leur fournissant des conseils, du matériel et des consommables en 
+                    temps voulu. Il a également facilité la mise en place de quatre laboratoires de dépistage par RT-PCR (à Vanuatu, à Kiribati, aux Îles Cook et aux Fidji) pour faire face à la hausse de la demande dans le contexte de la COVID-19. Le LSP œuvre à présent au maintien de ces laboratoires, en appuyant le dépistage des maladies jugées prioritaires au sein des pays, réduisant ainsi le délai de confirmation des flambées épidémiques et de prise de mesures de santé publique.    
+                </p>
+                <p class="en-text" style="display:none;">
+                    LSP supports PICT laboratories during health emergencies with timely advice, procurement of equipment and consumables. It also facilitated four new open RTPCT laboratories in Vanuatu, Kiribati, Cook Islands and Fiji 
+                    to meet COVID testing demands. Now, LSP sustains these labs, helping countries perform priority diseases testing and improving outbreak confirmation time and public health measures.    
+                </p>
+            </div>
+        </div>
+        
+        <!-- Bulletins d'information -->
+        <h2 style="text-align: center; margin: 3rem 0 2rem; font-size: 2.5rem; color: var(--pantone-293);">
+            <span class="fr-text">La santé, parlons-en!</span>
+            <span class="en-text" style="display:none;">Let’s talk about health!</span>
+        </h2>
+        
+        <div class="cards-grid four"> 
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-apple-alt"></i>
                 </div>
-            </li>
-        </ul>
-    </nav>
-    
-    <!-- Header -->
-    <header>
-        <h1 class="fr-text">Présentation de la Division Santé Publique</h1>
-        <h1 class="en-text" style="display:none;">Presentation of the Public Health Division </h1>
-    </header>
-    
-    <!-- Introduction -->
-    <div class="main-container">
-
-<!-- Histoire de la CPS -->
-<div class="card" id="division">
-    <h2 class="fr-text">Division santé publique</h2>
-    <h2 class="en-text" style="display:none;">Public Health Division</h2>
-    <p class="fr-text">
-        La Division santé publique a été créée en janvier 2009 et remplace le Département santé publique, 
-        autrefois rattaché à la Division ressources sociales de la CPS. En établissant cette nouvelle division, 
-        la CPS reconnaît que le développement durable dans tous les secteurs n'est possible que si les populations 
-        océaniennes sont en bonne santé et ont accès à des systèmes de santé publique de qualité.
-    </p>
-    <p class="en-text" style="display:none;">
-        The Public Health Division was set up in January 2009, replacing the Public Health Programme, which was 
-        formerly part of SPC's Social Resources Division. By creating this new division, SPC acknowledged that 
-        sustainable development in all sectors would be possible only if the people of the Pacific were healthy 
-        and had access to high-quality public health systems.
-    </p>
-    <p class="fr-text">
-        Dès sa création en 1947, la CPS a mis en place des projets visant à améliorer la santé des Océaniens. 
-        Cependant, les priorités et actions proposées ont évolué au fil des années en fonction du contexte 
-        sanitaire régional, des besoins exprimés par les pays membres et des ressources financières disponibles.
-    </p>
-    <p class="en-text" style="display:none;">
-        Since its founding in 1947, SPC has implemented projects that aim to improve Pacific Islanders' health. 
-        The priorities and actions proposed have evolved over the years, based on the regional health situation, 
-        the needs expressed by member countries and the financial resources available.
-    </p>
-</div>
-
-<!-- Bulletins d'information -->
-<h2 style="text-align: center; margin: 3rem 0 2rem; font-size: 2.5rem; color: var(--pantone-293);">
-    <span class="fr-text">La santé, parlons-en!</span>
-    <span class="en-text" style="display:none;">Let’s talk about health!</span>
-</h2>
-
-<div class="cards-grid four"> 
-    <div class="card">
-        <div class="card-icon">
-            <i class="fas fa-apple-alt"></i>
-        </div>
-        <h3 class="fr-text">PIN - Nutrition en Océanie</h3>
-        <h3 class="en-text" style="display:none;">PIN - Pacific Island Nutrition</h3>
-        <p class="fr-text">
-            Créé en 1989, le bulletin Nutrition en Océanie était destiné aux nutritionnistes, diététiciens et 
-            professionnels de l'éducation alimentaire. Son nom a par la suite été changé pour devenir le Bulletin 
-            des maladies non transmissibles. Le dernier numéro (n°70) a été publié en 2010.
-        </p>
-        <p class="en-text" style="display:none;">
-            Started in 1989, Pacific Island Nutrition targeted nutritionists, dietitians and food-education 
-            professionals. Its name later changed to Pacific Islands Non Communicable Diseases. The last issue 
-            (No. 70) was published in 2010.
-        </p>
-    </div>
-    
-    <div class="card">
-        <div class="card-icon">
-            <i class="fas fa-broadcast-tower"></i>
-        </div>
-        <h3 class="fr-text">Coconut Wireless</h3>
-        <h3 class="en-text" style="display:none;">Coconut Wireless</h3>
-        <p class="fr-text">
-            Coconut wireless, bulletin d'information sur l'éducation et la promotion de la santé, est un bulletin 
-            destiné aux personnes intéressées par la promotion de la santé dans les pays océaniens. Trois numéros 
-            sont disponibles (1996, 1997, 1999).
-        </p>
-        <p class="en-text" style="display:none;">
-            Coconut Wireless, a health education and promotion newsletter for people with an interest in health 
-            promotion in Pacific Island countries. Three issues are available (1996, 1997, 1999).
-        </p>
-    </div>
-    
-    <div class="card">
-            <div class="card-icon">
-                <i class="fas fa-ribbon"></i>
+                <h3 class="fr-text">PIN - Nutrition en Océanie</h3>
+                <h3 class="en-text" style="display:none;">PIN - Pacific Island Nutrition</h3>
+                <p class="fr-text">
+                    Créé en 1989, le bulletin Nutrition en Océanie était destiné aux nutritionnistes, diététiciens et 
+                    professionnels de l'éducation alimentaire. Son nom a par la suite été changé pour devenir le Bulletin 
+                    des maladies non transmissibles. Le dernier numéro (n°70) a été publié en 2010.
+                </p>
+                <p class="en-text" style="display:none;">
+                    Started in 1989, Pacific Island Nutrition targeted nutritionists, dietitians and food-education 
+                    professionals. Its name later changed to Pacific Islands Non Communicable Diseases. The last issue 
+                    (No. 70) was published in 2010.
+                </p>
             </div>
-            <h3 class="fr-text">Alerte au SIDA</h3>
-            <h3 class="en-text" style="display:none;">AIDS Alert Bulletin</h3>
-            <p class="fr-text">
-                Le bulletin Alerte au SIDA en Océanie était produit par le programme de lutte contre le VIH, SIDA 
-                et les IST. Le dernier et 40e numéro a été publié en octobre 2013.
-            </p>
-            <h4 class="fr-text"><a class="bulletin" href="https://www.spc.int/DigitalLibrary/PHD/Collection/PASA">Accéder aux bulletins</a></h4>
-            <p class="en-text" style="display:none;">
-                The Pacific AIDS Alert Bulletin (PASA) was produced by the HIV/AIDS/STI control programme. Its 40th 
-                and final issue was published in October 2013.
-            </p>
-            <h4 class="en-text"><a class="bulletin" href="https://www.spc.int/DigitalLibrary/PHD/Collection/PASA">Access the newsletters</a></h4>
-    </div>
-    
-    <div class="card">
-            <div class="card-icon">
-                <i class="fas fa-newspaper"></i>
+            
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-broadcast-tower"></i>
+                </div>
+                <h3 class="fr-text">Coconut Wireless</h3>
+                <h3 class="en-text" style="display:none;">Coconut Wireless</h3>
+                <p class="fr-text">
+                    Coconut wireless, bulletin d'information sur l'éducation et la promotion de la santé, est un bulletin 
+                    destiné aux personnes intéressées par la promotion de la santé dans les pays océaniens. Trois numéros 
+                    sont disponibles (1996, 1997, 1999).
+                </p>
+                <p class="en-text" style="display:none;">
+                    Coconut Wireless, a health education and promotion newsletter for people with an interest in health 
+                    promotion in Pacific Island countries. Three issues are available (1996, 1997, 1999).
+                </p>
             </div>
-            <h3 class="fr-text">Inform'ACTION</h3>
-            <h3 class="en-text" style="display:none;">Inform'ACTION</h3>
-            <p class="fr-text">
-                Lancé en 1998, Inform'ACTION était le bulletin d'information bilingue (anglais/français) du ROSSP. 
-                Il contient plus de 250 articles rédigés par des professionnels de santé océaniens. Le dernier des 
-                37 numéros, sorti en août 2013, était consacré au changement climatique et à la santé.
-            </p>
-            <h4 class="fr-text"><a class="bulletin" href="https://www.pphsn.net/fr/ressources/inform-action/#:~:text=Inform%27ACTION%20est%20un%20bulletin,Pacifique%20de%201998%20%C3%A0%202013.">Accéder aux bulletins</a></h4>
-            <p class="en-text" style="display:none;">
-                Launched in 1998, Inform'ACTION was the bilingual newsletter of the PPHSN. It contained more than 250 
-                articles written by Pacific Island health professionals. The 37th and final issue, released in August 
-                2013, was devoted to climate change and health.
-            </p>
-            <h4 class="en-text"><a class="bulletin" href="https://www.pphsn.net/fr/ressources/inform-action/#:~:text=Inform%27ACTION%20est%20un%20bulletin,Pacifique%20de%201998%20%C3%A0%202013.">Access the newsletters</a></h4>
-    </div>
-</div>
-
-<!-- Information programmes -->
-<h2 style="text-align: center; margin: 3rem 0 2rem; font-size: 2.5rem; color: var(--pantone-293);">
-    <span class="fr-text">Demandez le programme !</span>
-    <span class="en-text" style="display:none;">Get the programme!</span>
-</h2>
-
-<!-- Section Programmes -->
-<div class="programs-section">
-    
-    <!-- Programme 1: Maladies non transmissibles -->
-    <div class="program-item layout-65-35">
-        <div class="program-content">
-            <h3 class="fr-text">Programme de prévention et de lutte contre les maladies non transmissibles</h3>
-            <h3 class="en-text" style="display:none;">Non-communicable Diseases Programme</h3>
-            <p class="fr-text">
-                Le Programme de prévention et de lutte contre les maladies non 
-                transmissibles (MNT) vise à accompagner l'Océanie dans les efforts déployés 
-                pour combattre notamment les maladies cardiovasculaires, le cancer, le diabète et 
-                les maladies pulmonaires chroniques ainsi que leurs facteurs de risque principaux, 
-                tels que la consommation d'aliments et de boissons néfastes pour la santé, le manque 
-                d'activité physique ainsi que la consommation de tabac et d'alcool. Le Programme 
-                permet d'apporter un appui concret aux pays membres, afin qu'ils puissent soutenir 
-                l'engagement de leurs dirigeants politiques dans ce domaine, mieux mettre en 
-                application leurs stratégies et lois, renforcer leurs capacités (mise à disposition de 
-                ressources et formations), intensifier les échanges avec les différents services publics 
-                et avec les communautés, et consolider le suivi et l'évaluation des mesures prises 
-                contre les MNT.
-            </p>
-            <p class="en-text" style="display:none;">
-                The Non-communicable Diseases (NCDs) prevention and control programme supports the Pacific 
-                region in its efforts to tackle diseases such as heart disease, cancer, diabetes and chronic lung 
-                diseases, and their key risk factors, including the consumption of unhealthy foods and drinks, 
-                lack of exercise, smoking and drinking. The NCD programme actively supports member countries 
-                to improve the commitment of their political leaders, enhance implementation of policies and 
-                laws, strengthen capacity through the provision of resources and training, increase engagement 
-                with government and communities, develop innovative technology, and strengthen monitoring 
-                and evaluation of NCD interventions.
-            </p>
-        </div>
-        
-        <div class="info-box">
-            <p class="fr-text">
-                En réponse à la crise des MNT, la CPS a lancé le projet régional Wake Up! en 2017. Ce projet a permis d'apprendre à de jeunes participants des techniques de communication, 
-                le but étant qu'ils puissent sensibiliser leurs communautés aux MNT en recourant à diverses techniques artistiques, telles que la création de vidéos, la peinture et le 
-                dessin. En prenant soin de leur santé dès leur plus jeune âge et en cultivant un mode de vie sain, les jeunes peuvent joindre le geste à la parole et servir de modèles pour leurs pairs.
-            </p>
-            <p class="en-text" style="display:none;">
-                In response to the NCD crisis, we launched the Wake Up! Regional Project in 2017. We trained and educated young people on communication 
-                techniques to raise communities' awareness about NCDs through artforms like films, painting, drawing, etc. By adopting and sustaining healthy behaviours 
-                early in life, young people can walk the talk and become role models for their peers.
-            </p>
+            
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-ribbon"></i>
+                </div>
+                <h3 class="fr-text">Alerte au SIDA</h3>
+                <h3 class="en-text" style="display:none;">AIDS Alert Bulletin</h3>
+                <p class="fr-text">
+                    Le bulletin Alerte au SIDA en Océanie était produit par le programme de lutte contre le VIH, SIDA 
+                    et les IST. Le dernier et 40e numéro a été publié en octobre 2013.
+                </p>
+                <h4 class="fr-text"><a class="bulletin" href="https://www.spc.int/DigitalLibrary/PHD/Collection/PASA">Accéder aux bulletins</a></h4>
+                <p class="en-text" style="display:none;">
+                    The Pacific AIDS Alert Bulletin (PASA) was produced by the HIV/AIDS/STI control programme. Its 40th 
+                    and final issue was published in October 2013.
+                </p>
+                <h4 class="en-text"><a class="bulletin" href="https://www.spc.int/DigitalLibrary/PHD/Collection/PASA">Access the newsletters</a></h4>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <h3 class="fr-text">Inform'ACTION</h3>
+                <h3 class="en-text" style="display:none;">Inform'ACTION</h3>
+                <p class="fr-text">
+                    Lancé en 1998, Inform'ACTION était le bulletin d'information bilingue (anglais/français) du ROSSP. 
+                    Il contient plus de 250 articles rédigés par des professionnels de santé océaniens. Le dernier des 
+                    37 numéros, sorti en août 2013, était consacré au changement climatique et à la santé.
+                </p>
+                <h4 class="fr-text"><a class="bulletin" href="https://www.pphsn.net/fr/ressources/inform-action/#:~:text=Inform%27ACTION%20est%20un%20bulletin,Pacifique%20de%201998%20%C3%A0%202013.">Accéder aux bulletins</a></h4>
+                <p class="en-text" style="display:none;">
+                    Launched in 1998, Inform'ACTION was the bilingual newsletter of the PPHSN. It contained more than 250 
+                    articles written by Pacific Island health professionals. The 37th and final issue, released in August 
+                    2013, was devoted to climate change and health.
+                </p>
+                <h4 class="en-text"><a class="bulletin" href="https://www.pphsn.net/fr/ressources/inform-action/#:~:text=Inform%27ACTION%20est%20un%20bulletin,Pacifique%20de%201998%20%C3%A0%202013.">Access the newsletters</a></h4>
+            </div>
         </div>
     </div>
-    
-    <!-- Programme 2: Surveillance, préparation et réponse -->
-    <div class="program-item layout-65-35">
-        <div class="program-content">
-            <h3 class="fr-text">Programme surveillance, préparation et réponse</h3>
-            <h3 class="en-text" style="display:none;">Surveillance, Preparedness and Response Programme</h3>
-            <p class="fr-text">
-                Dans le cadre du Programme surveillance, préparation et réponse (SPRP), un appui est apporté aux pays concernant les activités qu'ils mènent en matière de sécurité sanitaire, pour permettre une détection précoce des flambées épidémiques ainsi qu'une alerte et une intervention rapide. Il s'agit notamment de faciliter 
-                le partage d'informations dans la région, d'animer des formations en épidémiologie de terrain, en entomologie, en communication sur les risques et mobilisation communautaire, d'appuyer la riposte des pays face aux épidémies et aux catastrophes naturelles, ainsi que d'élaborer des outils innovants pour les systèmes d'alerte précoce sur 
-                les maladies. Depuis 2012, un appui est aussi apporté aux pays de la région quant à la mise en œuvre d'une surveillance renforcée pendant les grands rassemblements comme les Jeux du Pacifique. Le SPRP fait office de point de contact pour le Réseau océanien de surveillance de la santé publique depuis la création de celui-ci en 1996.
-            </p>
-            <p class="en-text" style="display:none;">
-                The Surveillance, Preparedness and Response Programme (SPRP) assists countries with their health security efforts for early detection, alertness and 
-                response to disease outbreaks. This is achieved by facilitating information-sharing in the region, delivering training in field epidemiology, entomology, risk communication and community engagement, supporting 
-                countries' responses to outbreaks and natural disasters and developing innovative tools for early disease warning systems. Since 2012, the team has also supported 
-                countries to implement enhanced surveillance during mass gatherings like the Pacific Games. SPRP has acted as a focal point for the Pacific Public Health Surveillance Network since it began in 1996.
-            </p>
-        </div>
-        
-        <div class="info-box">
-            <p class="fr-text">
-                La CPS apporte un appui aux Îles Salomon en vue de la préparation et de la mise en œuvre d'une surveillance renforcée pour les Jeux du Pacifique 2023, notamment en procédant à une évaluation des risques, en mettant au point des outils, en élaborant 
-                des directives et en organisant des formations préalablement à l'événement, dans le cadre d'une collaboration avec le ministère de la Santé et des Services médicaux, le but étant de renforcer le système de surveillance.
-            </p>
-            <p class="en-text" style="display:none;">
-                To support Solomon Islands with the preparation and implementation of enhanced surveillance during the 2023 Pacific Games, we are working with the Ministry of 
-                Health and Medical Services to conduct risk assessment, develop tools and guidelines and roll out training in the lead-up to the event. This will contribute towards a stronger surveillance system
-            </p>
-        </div>
-    </div>
-    
-    <!-- Programme 3: Renforcement des systèmes de santé -->
-    <div class="program-item layout-65-35">
-        <div class="program-content">
-            <h3 class="fr-text">Programme de renforcement des systèmes de santé</h3>
-            <h3 class="en-text" style="display:none;">Health Systems Strengthening Programme</h3>
-            <p class="fr-text">
-                Le Programme de renforcement des systèmes de santé (HSSP) vise à améliorer la santé au travers d'activités axées sur le leadership, les systèmes d'information 
-                sanitaire, le personnel de santé, la communication et la planification. L'équipe du Programme prend part aux réunions des responsables océaniens de la santé en vue de définir des priorités et de coordonner les efforts, et apporte un appui 
-                à l'élaboration de systèmes d'information sanitaire, à la planification, au suivi et à l'évaluation. Des outils tels que les médias, la communication narrative et les réseaux sociaux sont utilisés pour faire connaître les activités du Programme. Les activités de planification, de suivi-évaluation et d'apprentissage permettent 
-                d'orienter la Division dans l'élaboration de plans de travail et de rapports ainsi que pour ce qui est d'adapter ses activités afin d'accompagner au mieux le développement de leurs services de santé. Les efforts constants déployés permettent de renforcer la prestation de services de santé et d'améliorer la santé dans la région.    
-            </p>
-            <p class="en-text" style="display:none;">
-                The Health Systems Strengthening Programme (HSSP) aims for better health by focusing on leadership, health information systems, workforce, communication, and planning. It invests in Pacific health leaders' meetings to set priorities and coordinate efforts. HSSP supports health information 
-                system development, planning, monitoring, and evaluation. It uses communication tools such as the media, storytelling, and social media to showcase their work. PMEL guides the Public Health Division with work 
-                plans and reporting, adapting to support health sector development in the Pacific. Its consistent efforts help strengthen health services delivery and improve health in the region    
-            </p>
-        </div>
-        
-        <div class="info-box">
-            <p class="fr-text">
-                En 2023, les activités menées par le Programme HSSP ont contribué au renforcement des systèmes de santé océaniens, notamment grâce à la Réunion des directeurs de la santé du Pacifique et au 
-                Réseau océanien d'information sanitaire. Des réunions de réflexion ont été organisées, le but étant d'évaluer les progrès accomplis, les difficultés rencontrées et les enseignements tirés tout en élaborant 
-                des stratégies et en mettant en avant des exemples de réussite. Dans l'après COVID-19, le HSSP sera à la tête de plusieurs domaines de spécialité. Les produits de communication créés visent à refléter les 
-                différentes voix océaniennes, les réussites et les enseignements tirés en Océanie, de manière à améliorer la visibilité des activités réalisées
-            </p>
-            <p class="en-text" style="display:none;">
-                In 2023, HSSP strengthened Pacific health systems through meetings such as the Pacific Heads of Health meeting and the Pacific Health Information Network. They held reflection meetings to assess progress, challenges and learning, developing strategies and highlighting success stories. 
-                HSSP will lead niche areas in post-COVID-19. Communication products capture Pacific voices, successes and lessons for visibility    
-            </p>
-        </div>
-    </div>
-    
-    <!-- Programme 4: Services cliniques -->
-    <div class="program-item layout-65-35">
-        <div class="program-content">
-            <h3 class="fr-text">Programme services cliniques</h3>
-            <h3 class="en-text" style="display:none;">Clinical Services Programme</h3>
-            <p class="fr-text">
-                Le Programme services cliniques (CSP) apporte un appui aux pays océaniens dans l'offre et le renforcement des services cliniques. Le but est de fournir des soins de santé de qualité, abordables et accessibles, notamment pour ce qui est des 
-                services cliniques, des soins infirmiers et des services de lutte anti-infectieuse. Le Programme CSP participe au renforcement des capacités des effectifs, ainsi qu'à l'amélioration de 
-                la formation et du leadership grâce au perfectionnement professionnel et à la formation médicale continue. Il contribue au déploiement de cliniciens et de personnel infirmier en cas d'urgence sanitaire et à l'apport d'un appui en ce qui concerne le matériel biomédical, les achats et la mise en œuvre des lignes directrices relatives à la lutte anti-infectieuse    
-            </p>
-            <p class="en-text" style="display:none;">
-                The Clinical Services Program (CSP) assists Pacific countries in delivering and strengthening clinical services. It focuses on good quality, affordable and accessible healthcare, including clinical, 
-                nursing, and IPC services. CSP enhances workforce, education and leadership through professional development and continuing medical education. It facilitates 
-                clinician and nursing deployment during health emergencies and provides support for biomedical equipment, procurement and IPC guidelines implementation.     
-            </p>
-        </div>
-        
-        <div class="info-box">
-            <p class="fr-text">
-                En réponse à une demande d'appui dans le domaine des services cliniques, des outils d'évaluation des besoins ont été mis au point dans le cadre du Programme, le but étant de déterminer ce qui fonctionne bien, ce qui fait défaut et ce qui pose problème dans les pays, pour ensuite pouvoir leur prêter assistance en élaborant des lignes directrices et des stratégies ainsi qu'en facilitant l'organisation de formations vouées à renforcer les capacités des effectifs dans ces domaines précis    
-            </p>
-            <p class="en-text" style="display:none;">
-                In response to the demand for clinical services support, we have developed needs assessment tools to understand what works well, what are the gaps and challenges and how we can assist through guidance, policies and training to improve workforce capacity in these specific areas
-            </p>
-        </div>
-    </div>
-    
-    <!-- Programme 5: Renforcement des laboratoires -->
-    <div class="program-item layout-65-35">
-        <div class="program-content">
-            <h3 class="fr-text">Programme de renforcement des laboratoires</h3>
-            <h3 class="en-text" style="display:none;">Laboratory Strengthening Programme</h3>
-            <p class="fr-text">
-                La pandémie de COVID-19 a révélé le rôle essentiel que jouent les laboratoires dans la sécurité sanitaire. Les activités du Programme de renforcement des laboratoires (LSP) sont axées sur la mise en œuvre et l'évaluation de systèmes de gestion de la qualité en laboratoire, le 
-                but étant d'aboutir au respect total de la norme ISO 15189. Elles visent également à faciliter le transfert d'échantillons et à aider les transporteurs de substances infectieuses à obtenir l'agrément nécessaire conformément 
-                à la réglementation de l'Association du transport aérien international (IATA). En cas d'épidémie, le Programme LSP fournit des conseils et des directives aux pays au sujet du transfert d'échantillons et assure la prise en charge des tests réalisés dans les laboratoires de référence. Le Programme apporte en outre un appui à la mise en place de nouveaux laboratoires d'analyse et à la surveillance de la résistance aux antimicrobiens en organisant des formations et en élaborant un antibiogramme de manière à améliorer le dépistage et la surveillance de la résistance aux antimicrobiens dans la région.    
-            </p>
-            <p class="en-text" style="display:none;">
-                The COVID-19 pandemic highlighted the crucial role of laboratory services in ensuring health security. The Laboratory Strengthening Programme (LSP) focuses on implementing and assessing laboratory quality management systems, aiming for ISO 15189 standards. 
-                It also facilitates specimen referrals and supports certification of laboratory shippers according to International Air Transport Association (IATA) regulations. During outbreaks, LSP advises and guides countries on specimen referral and covers testing costs in reference labs. Additionally, the programme aids in setting up new 
-                testing laboratories and supports antimicrobial resistance (AMR) surveillance through training and the development of an antibiogram, leading to improved AMR testing and surveillance in the region.
-            </p>
-        </div>
-        
-        <div class="info-box">
-            <p class="fr-text">
-                Le Programme LSP apporte un appui aux laboratoires des États et Territoires insulaires océaniens en cas d'urgence sanitaire en leur fournissant des conseils, du matériel et des consommables en 
-                temps voulu. Il a également facilité la mise en place de quatre laboratoires de dépistage par RT-PCR (à Vanuatu, à Kiribati, aux Îles Cook et aux Fidji) pour faire face à la hausse de la demande dans le contexte de la COVID-19. Le LSP œuvre à présent au maintien de ces laboratoires, en appuyant le dépistage des maladies jugées prioritaires au sein des pays, réduisant ainsi le délai de confirmation des flambées épidémiques et de prise de mesures de santé publique.    
-            </p>
-            <p class="en-text" style="display:none;">
-                LSP supports PICT laboratories during health emergencies with timely advice, procurement of equipment and consumables. It also facilitated four new open RTPCT laboratories in Vanuatu, Kiribati, Cook Islands and Fiji 
-                to meet COVID testing demands. Now, LSP sustains these labs, helping countries perform priority diseases testing and improving outbreak confirmation time and public health measures.    
-            </p>
-        </div>
-    </div>
-</div>
 </div>
 
 <!-- Footer -->
