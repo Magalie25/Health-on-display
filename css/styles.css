@@ -291,6 +291,7 @@ header p {
 /* Thème spécifique pour les cartes thématiques */
 .theme-card {
     color: var(--pantone-293);
+    padding: 20px;
     border-radius: 20px;
     animation: fadeInUp 0.8s ease;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -340,46 +341,29 @@ header p {
 
 /* Tooltip styles */
 .tooltip {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor: pointer;
 }
 
-.tooltip .tooltiptext {
-    visibility: hidden;
-    background: var(--pantone-293);
-    color: var(--white);
-    text-align: center;
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    transform: translateX(-50%);
-    
-    /* Animation */
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-/* Arrow */
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: var(--pantone-293) transparent transparent transparent;
+.tooltiptext {
+  visibility: hidden;
+  width: 130px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -65px;
+  background-color: var(--pantone-293);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
 }
 
 .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
 }
 
 /* Theme card modifications for tooltips */
