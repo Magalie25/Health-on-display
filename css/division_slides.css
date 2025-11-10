@@ -121,7 +121,6 @@
 }
 
 .program-text p {
-    color: #333;
     text-align: justify;
     margin-bottom: 1rem;
 }
@@ -129,7 +128,6 @@
 /* Zone image avec effet fondu vers le haut uniquement */
 .program-image {
     position: relative;
-    margin-top: 15vh;
     height: 450px;
     border-radius: 20px;
     overflow: hidden;
@@ -763,4 +761,5 @@
 
 .fade-in-text:nth-child(2) { transition-delay: 0.15s; }
 .fade-in-text:nth-child(3) { transition-delay: 0.3s; }
+
 .fade-in-text:nth-child(4) { transition-delay: 0.45s; }
