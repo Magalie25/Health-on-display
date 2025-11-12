@@ -16,6 +16,12 @@
     transition: transform 0.6s;
 }
 
+.flip-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
 .flip-container:hover .flip-card {
     transform: rotateY(180deg);
 }
@@ -30,18 +36,21 @@
 }
 
 .flip-front {
-    background: linear-gradient(135deg, var(--pantone-293) 0%, var(--pantone-3125) 100%);
     font-size: 1.2em;
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.flip-front h3 {
+    margin-top: -5vh;
+}
+
 .flip-back {
-    background: var(--pantone-293);
-    color: white;
+    background: var(--pantone-3125);
+    color: rgb(0, 0, 0);
     transform: rotateY(180deg);
     padding: 1.5rem;
     display: flex;

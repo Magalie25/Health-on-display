@@ -32,6 +32,9 @@
             return;
         }
         
+        // Met à jour la variable CSS --navbar-height selon la hauteur réelle du header
+        updateNavbarHeight();
+        
         setupNavigation();
         setupProgressBar();
         setupKeyboardNav();
@@ -41,6 +44,13 @@
         
         // Observer pour les animations
         setupIntersectionObserver();
+    }
+
+    // met à jour la variable CSS --navbar-height (appelée au chargement et au resize)
+    function updateNavbarHeight() {
+        const navbar = document.getElementById('navbar');
+        const height = navbar ? Math.ceil(navbar.getBoundingClientRect().height) : 0;
+        document.documentElement.style.setProperty('--navbar-height', `${height}px`);
     }
     
     /**
@@ -340,10 +350,11 @@
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(() => {
+            // recalculer la hauteur du header (important si header change ou responsive)
+            updateNavbarHeight();
             updateActiveSlide();
             updateNavigationDots();
             updateProgressBar();
         }, 250);
     });
-    
 })();
