@@ -115,7 +115,7 @@ nav.hidden {
 
 .nav-links a:hover {
     color: #00AEC7;
-
+    
 }
 
 .nav-links li a.active {
@@ -341,29 +341,29 @@ header p {
 
 /* Tooltip styles */
 .tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-  cursor: pointer;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
 }
 
 .tooltiptext {
-  visibility: hidden;
-  width: 130px;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -65px;
-  background-color: var(--pantone-293);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
+    visibility: hidden;
+    width: 130px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -65px;
+    background-color: var(--pantone-293);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
 }
 
 .tooltip:hover .tooltiptext {
-  visibility: visible;
+    visibility: visible;
 }
 
 /* Theme card modifications for tooltips */
@@ -628,7 +628,7 @@ footer {
 /* Show dropdown on hover/focus for desktop */
 @media (min-width: 769px) {
     /* Show on hover/focus; dropdown is directly adjacent to button (no gap)
-       which prevents accidental closing when moving the mouse down */
+    which prevents accidental closing when moving the mouse down */
     .nav-item:hover > .dropdown,
     .nav-item:focus-within > .dropdown {
         display: block;
@@ -648,7 +648,7 @@ footer {
         max-height: none;
         display: block;
     }
-
+    
     /* Top-level toggles become full-width list items */
     .dropdown-toggle {
         display: block;
@@ -658,7 +658,7 @@ footer {
         background: transparent;
         border: none;
     }
-
+    
     /* Submenu links are indented under their parent */
     .dropdown li a {
         padding-left: 1.8rem;
@@ -668,11 +668,11 @@ footer {
         display: block;
         color: #0046ad;
     }
-
+    
     .nav-links .nav-item {
         width: 100%;
     }
-
+    
     .nav-links a, .dropdown-toggle {
         padding-left: 0.6rem;
         padding-right: 0.6rem;
@@ -728,9 +728,9 @@ footer {
 }
 
 iframe {
-  width: 100% !important;
-  height: 100% !important;
-  border: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
 }
 
 .card-img {
@@ -738,4 +738,20 @@ iframe {
     height: auto;
     border-radius: 15px;
     margin-top: 20px;
+}
+
+/*grid for iframe pdf*/
+
+.pdf-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pdf-grid iframe {
+    width: 300px !important;
+    height: 420px !important;
+    border-radius: 8px;
+    .pdf-grid {
+        grid-template-columns: 1fr;
+    }
 }

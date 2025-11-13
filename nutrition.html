@@ -7,6 +7,10 @@
     <title>Health on Display</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carrousel.css">
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -22,7 +26,7 @@
             <span></span>
             <span></span>
         </button>
-
+        
         <ul class="nav-links" id="navLinks">
             <li class="nav-item has-dropdown">
                 <button class="nav-link dropdown-toggle fr-text" aria-expanded="false">Présentation</button>
@@ -53,7 +57,7 @@
             </li>
         </ul>
     </nav>
-
+    
     <!-- Header -->
     <header>
         <h1 class="fr-text">Bien se nourrir !</h1>
@@ -61,7 +65,7 @@
         <p class="fr-text">Bien se nourrir pour mieux grandir</p>
         <p class="en-text" style="display:none;">Eat well to grow strong</p>
     </header>
-
+    
     <!-- Contenu principal -->
     <div class="main-container">
         <div class="card">
@@ -83,7 +87,18 @@
                 imported processed foods that are high in fat, salt and sugar.
             </p>
         </div>
-
+        
+        <div class="section">
+            <div class="gallery-grid" id="gallery1">
+                <div class="gallery-item" data-index="0" onclick="openLightbox(0)"><iframe src="https://www.spc.int/digitallibrary/get/2gmz2"></iframe></div>
+                <div class="gallery-item" data-index="1" onclick="openLightbox(1)"><iframe src="https://www.spc.int/digitallibrary/get/meazi"></iframe></div>
+                <div class="gallery-item" data-index="2" onclick="openLightbox(2)"><iframe src="https://www.spc.int/digitallibrary/get/2gmz2"></iframe></div>
+                <div class="gallery-item" data-index="3" onclick="openLightbox(3)"><iframe src="https://www.spc.int/digitallibrary/get/meazi"></iframe></div>
+                <div class="gallery-item" data-index="4" onclick="openLightbox(4)"><iframe src="https://www.spc.int/digitallibrary/get/2gmz2"></iframe></div>
+                <div class="gallery-item" data-index="5" onclick="openLightbox(5)"><iframe src="https://www.spc.int/digitallibrary/get/meazi"></iframe></div>
+            </div>
+        </div>
+        
         <div class="info-box">
             <h2 class="fr-text">Sucre, gras et sel</h2>
             <h2 class="en-text" style="display:none;">Sugar, fat and salt</h2>
@@ -95,6 +110,12 @@
             </p>
         </div>
 
+        <div class="pdf-grid">
+            <iframe src="https://www.spc.int/digitallibrary/get/tw9mw"></iframe>
+            <iframe src="https://www.spc.int/digitallibrary/get/tsjnp"></iframe>
+            <iframe src="https://www.spc.int/digitallibrary/get/24vei"></iframe>
+        </div>
+        
         <div class="info-box">
             <h2 class="fr-text">Les trois groupes d'aliments</h2>
             <h2 class="en-text" style="display:none;">The three food groups</h2>
@@ -109,9 +130,12 @@
                 has changed over the years.
             </p>
         </div>
-
+        
         <div class="grid">
             <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
                 <h3 class="fr-text">Aliments protecteurs</h3>
                 <h3 class="en-text" style="display:none;">Protective foods</h3>
                 <p class="fr-text">
@@ -122,8 +146,11 @@
                     Include vegetables at two meals a day and have fruit as a snack. Local vegetables are best.
                 </p>
             </div>
-
+            
             <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
                 <h3 class="fr-text">Aliments constructeurs</h3>
                 <h3 class="en-text" style="display:none;">Body-building foods</h3>
                 <p class="fr-text">
@@ -134,8 +161,11 @@
                     Include in all meals. Select low fat protein foods. Eat twice a day.
                 </p>
             </div>
-
+            
             <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
                 <h3 class="fr-text">Aliments énergétiques</h3>
                 <h3 class="en-text" style="display:none;">Energy foods</h3>
                 <p class="fr-text">
@@ -147,7 +177,7 @@
                 </p>
             </div>
         </div>
-
+        
         <div class="card">
             <h2 class="fr-text">Des supports d'information variés pour manger équilibré</h2>
             <h2 class="en-text" style="display:none;">Varied informational materials for a balanced diet</h2>
@@ -158,31 +188,43 @@
                 To encourage the population to consume local products, SPC nutritionists have developed recipe books and videos for the general public, nutritional information sheets for health professionals, and games for children.
             </p>
         </div>
-
-        <div class="info-box">
-            <p class="fr-text">
-                Afin de diffuser les messages autour de la nutrition le plus largement possible, de nombreux supports de communication sont publiés chaque année depuis la création de la Division santé publique : affiches, vidéos, livres, flyers, jeux interactifs, et
-            </p>
-            <p class="en-text" style="display:none;">
-                Since the Public Health Division was set up, many communication materials have been published each year to spread messages about nutrition as broadly as possible. These include posters, videos, books, fl yers and interactive games
-            </p>
-        </div>
-
-        <!-- Navigation vers autres thématiques -->
-        <div style="text-align: center; margin: 3rem 0;">
-            <h3 class="fr-text" style="color: var(--pantone-293); margin-bottom: 2rem;">Découvrez d'autres thématiques</h3>
-            <h3 class="en-text" style="display:none; color: var(--pantone-293); margin-bottom: 2rem;">Discover other themes</h3>
-            <a href="climat.html" class="btn fr-text">SANTE ET CHANGEMENT CLIMATIQUE</a>
-            <a href="climat.html" class="btn en-text" style="display:none;">HEALTH AND CLIMATE CHANGE</a>
+        
+        <div class="section">
+            <div class="gallery-grid" id="gallery2">
+                <div class="gallery-item" data-index="0" onclick="openLightbox(0)"><iframe src="https://www.spc.int/digitallibrary/get/2gmz2"></iframe></div>
+                <div class="gallery-item" data-index="1" onclick="openLightbox(1)"><iframe src="https://www.spc.int/digitallibrary/get/meazi"></iframe></div>
+                <div class="gallery-item" data-index="2" onclick="openLightbox(2)"><iframe src="https://www.spc.int/digitallibrary/get/2gmz2"></iframe></div>
+                <div class="gallery-item" data-index="3" onclick="openLightbox(3)"><iframe src="https://www.spc.int/digitallibrary/get/meazi"></iframe></div>
+                <div class="gallery-item" data-index="4" onclick="openLightbox(4)"><iframe src="https://www.spc.int/digitallibrary/get/2gmz2"></iframe></div>
+                <div class="gallery-item" data-index="5" onclick="openLightbox(5)"><iframe src="https://www.spc.int/digitallibrary/get/meazi"></iframe></div>
+            </div>
+            
+            <div class="info-box">
+                <p class="fr-text">
+                    Afin de diffuser les messages autour de la nutrition le plus largement possible, de nombreux supports de communication sont publiés chaque année depuis la création de la Division santé publique : affiches, vidéos, livres, flyers, jeux interactifs, et
+                </p>
+                <p class="en-text" style="display:none;">
+                    Since the Public Health Division was set up, many communication materials have been published each year to spread messages about nutrition as broadly as possible. These include posters, videos, books, fl yers and interactive games
+                </p>
+            </div>
+            
+            <!-- Navigation vers autres thématiques -->
+            <div style="text-align: center; margin: 3rem 0;">
+                <h3 class="fr-text" style="color: var(--pantone-293); margin-bottom: 2rem;">Découvrez d'autres thématiques</h3>
+                <h3 class="en-text" style="display:none; color: var(--pantone-293); margin-bottom: 2rem;">Discover other themes</h3>
+                <a href="climat.html" class="btn fr-text">SANTE ET CHANGEMENT CLIMATIQUE</a>
+                <a href="climat.html" class="btn en-text" style="display:none;">HEALTH AND CLIMATE CHANGE</a>
+            </div>
         </div>
     </div>
-
+    
     <!-- Footer -->
     <footer>
         <p class="fr-text">&copy; La santé s'affiche - Nutrition</p>
         <p class="en-text" style="display:none;">&copy; Health on Display - Nutrition</p>
     </footer>
-
+    
     <script src="js/script.js"></script>
+    <script src="js/carrousel.js"></script>
 </body>
 </html>
