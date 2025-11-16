@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/SPC-CPS-logo_27_stars-01-NO TEXT.png">
+    <title>Health on Display</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/filter.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-logo">
+            <a href="index.html" class="logo">
+                <img alt="Accueil; Health on Display" src="img/SPC-CPS-logo_27_stars.png" style="height: 80px;">
+            </a>
+        </div>
+        
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        
+        <ul class="nav-links" id="navLinks">
+            <li class="nav-item has-dropdown">
+                <button class="nav-link dropdown-toggle fr-text" aria-expanded="false">Présentation</button>
+                <button class="nav-link dropdown-toggle en-text" aria-expanded="false" style="display:none;">Presentation</button>
+                <ul class="dropdown" role="menu">
+                    <li><a href="index.html" class="fr-text">Exposition La santé s'affiche</a><a href="index.html" class="en-text" style="display:none;">Health on Display exhibition</a></li>
+                    <li><a href="division_sante.html" class="fr-text">Division santé et ses programmes</a><a href="division_sante.html" class="en-text" style="display:none;">Public health division & programmes</a></li>
+                    <li><a href="timeline.html" class="fr-text">Chronologie</a><a href="timeline.html" class="en-text" style="display:none;">Timeline</a></li>
+                </ul>
+            </li>
+            <li class="nav-item has-dropdown">
+                <button class="nav-link dropdown-toggle fr-text" aria-expanded="false">La santé s'affiche</button>
+                <button class="nav-link dropdown-toggle en-text" aria-expanded="false" style="display:none;">Health on Display</button>
+                <ul class="dropdown" role="menu">
+                    <li><a href="famille_sante.html" class="fr-text">La famille en santé</a><a href="famille_sante.html" class="en-text" style="display:none;">Family and health</a></li>
+                    <li><a href="hygiene_vie.html" class="fr-text">Hygiène de vie</a><a href="hygiene_vie.html" class="en-text" style="display:none;">Healthy Living</a></li>
+                    <li><a href="maladies_infectieuses.html" class="fr-text">Maladies infectieuses</a><a href="maladies_infectieuses.html" class="en-text" style="display:none;">Infectious Diseases</a></li>
+                    <li><a href="addictions.html" class="fr-text">Combattre les addictions</a><a href="addictions.html" class="en-text" style="display:none;">Combatting addictions</a></li>
+                    <li><a href="nutrition.html" class="fr-text">Bien se nourrir</a><a href="nutrition.html" class="en-text" style="display:none;">Eat well</a></li>
+                    <li><a href="climat.html" class="fr-text">Santé et changement climatique</a><a href="climat.html" class="en-text" style="display:none;">Health and climate change</a></li>
+                    <li><a href="filter.html" class="fr-text active">Affiches "La santé s'affiche"</a><a href="filter.html" class="en-text active" style="display:none;">Posters "Health on display"</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <div class="language-switch">
+                    <button class="lang-btn">EN</button>
+                    <button class="lang-btn">FR</button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Header -->
+    <header>
+        <h1 class="fr-text">Affiches "La santé s'affiche"</h1>
+        <h1 class="en-text" style="display:none;">Posters "Health on display"</h1>
+    </header>
+    
+    <!-- FILTER + SEARCH BAR -->
+    <section style="max-width:1200px;margin:100px auto 0;padding:0 2rem;">
+        <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center;margin-bottom:1rem;">
+            <!-- Décennies -->
+            <div id="decadeFilters" style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+                <button class="filter-btn active" data-decade="all">
+                    <span class="fr-text">Toutes les années</span>
+                    <span class="en-text" style="display:none;">All years</span>
+                </button>
+                <button class="filter-btn" data-decade="1940s"><span class="fr-text">1940</span><span class="en-text" style="display:none;">1940s</span></button>
+                <button class="filter-btn" data-decade="1950s"><span class="fr-text">1950</span><span class="en-text" style="display:none;">1950s</span></button>
+                <button class="filter-btn" data-decade="1960s"><span class="fr-text">1960</span><span class="en-text" style="display:none;">1960s</span></button>
+                <button class="filter-btn" data-decade="1970s"><span class="fr-text">1970</span><span class="en-text" style="display:none;">1970s</span></button>
+                <button class="filter-btn" data-decade="1980s"><span class="fr-text">1980</span><span class="en-text" style="display:none;">1980s</span></button>
+                <button class="filter-btn" data-decade="1990s"><span class="fr-text">1990</span><span class="en-text" style="display:none;">1990s</span></button>
+                <button class="filter-btn" data-decade="2000s"><span class="fr-text">2000</span><span class="en-text" style="display:none;">2000s</span></button>
+                <button class="filter-btn" data-decade="2010s"><span class="fr-text">2010</span><span class="en-text" style="display:none;">2010s</span></button>
+                <button class="filter-btn" data-decade="2020s"><span class="fr-text">2020</span><span class="en-text" style="display:none;">2020s</span></button>
+            </div>
+            <!-- Themes -->
+            <div id="themeFilters" style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-left:1rem;">
+                <button class="filter-btn active" data-theme="all"><span class="fr-text">Tous thèmes</span><span class="en-text" style="display:none;">All themes</span></button>
+                <button class="filter-btn" data-theme="family"><span class="fr-text">La famille en santé</span><span class="en-text" style="display:none;">Family & health</span></button>
+                <button class="filter-btn" data-theme="healthy"><span class="fr-text">Hygiène de vie</span><span class="en-text" style="display:none;">Healthy living</span></button>
+                <button class="filter-btn" data-theme="infectious"><span class="fr-text">Maladies infectieuses</span><span class="en-text" style="display:none;">Infectious disease</span></button>
+                <button class="filter-btn" data-theme="addictions"><span class="fr-text">Combattre les addictions</span><span class="en-text" style="display:none;">Combatting addictions</span></button>
+                <button class="filter-btn" data-theme="nutrition"><span class="fr-text">Bien se nourrir</span><span class="en-text" style="display:none;">Eat well</span></button>
+                <button class="filter-btn" data-theme="climate"><span class="fr-text">Santé & climat</span><span class="en-text" style="display:none;">Health & climate</span></button>
+            </div>
+            
+            <!-- Search by poster title (aligned right) -->
+            <div style="margin-left:auto;display:flex;align-items:center;gap:0.5rem;">
+                <input id="searchInput" type="search" placeholder="Rechercher par titre d'affiche/ Search by poster's title" style="padding:0.5rem 0.75rem;border-radius:6px;border:1px solid #ddd;min-width:360px;">
+                <button id="clearSearch" title="Effacer" style="padding:0.5rem 0.75rem;border-radius:6px;border:1px solid #ddd;background:#fff;">✕</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Galerie PDF -->
+    <div id="pdfGallery" class="pdf-gallery" style="margin-top: 1rem;">
+        <!-- Les PDFs seront générés dynamiquement -->
+    </div>
+    
+    <!-- Visionneuse PDF fullscreen -->
+    <div id="pdfViewerContainer" class="pdf-container" style="display: none;">
+        <div class="viewer-header">
+            <h2 id="pdfTitle">PDF Viewer</h2>
+            <button onclick="closePdfViewer()">✕ Fermer</button>
+        </div>
+        <iframe id="pdfFrame" class="pdf-viewer"></iframe>
+        <div class="page-navigation" id="pageNav"></div>
+    </div>
+    
+    <!-- Footer -->
+    <footer style="margin-top: 3rem;">
+        <p class="fr-text">&copy; La santé s'affiche - PDF Viewer</p>
+        <p class="en-text" style="display:none;">&copy; Health on Display - PDF Viewer</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="js/filter.js"></script>
+</body>
+</html>

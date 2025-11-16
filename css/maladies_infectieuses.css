@@ -28,8 +28,6 @@
 }
 
 .carousel-nav {
-    position: absolute;
-    top: 50%;
     transform: translateY(-50%);
     background: var(--pantone-293);
     color: var(--white);

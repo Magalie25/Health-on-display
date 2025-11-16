@@ -1,0 +1,117 @@
+/* Image comparison slider - styles */
+* { box-sizing: border-box; }
+
+.image-compare-section {
+    width: 345px;
+    height: 512px;
+    margin: 0 auto;
+}
+
+.img-comp-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0;
+}
+
+/* both layers */
+.img-comp-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* the top layer that will be resized by JS */
+.img-comp-img.img-comp-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+/* make iframe fill its layer */
+.img-comp-img iframe {
+    width: 100%;
+}
+
+/* slider handle */
+.img-comp-slider {
+    position: absolute;
+    z-index: 20;
+    cursor: ew-resize;
+    width: 44px;
+    height: 44px;
+    background-color: var(--pantone-293, #003d A5);
+    color: #fff;
+    opacity: 0.95;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    transition: transform .08s ease;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* icon inside slider */
+.img-comp-slider::after {
+    content: "⇆";
+    font-size: 14px;
+    line-height: 1;
+}
+
+/* make slider slightly smaller/light on small screens */
+@media (max-width: 768px) {
+    .img-comp-container { height: min(55vh, 420px); max-height: 420px; }
+    .img-comp-slider { width: 36px; height: 36px; font-size: 12px; }
+}
+
+/* phones */
+@media (max-width: 480px) {
+    .img-comp-container { height: min(48vh, 360px); max-height: 360px; }
+    .img-comp-slider { width: 32px; height: 32px; font-size: 11px; }
+}
+
+/* cacher scrollbars globalement */
+::-webkit-scrollbar { display: none; }
+html, body { -ms-overflow-style: hidden; scrollbar-width: hidden; }
+
+/* Wrapper pour afficher deux sliders côte à côte */
+.image-compare-wrapper {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.image-compare-wrapper .image-compare-section {
+    flex: 1;
+    min-width: 350px;
+    max-width: 400px;
+    margin: 0;
+}
+
+/* Responsive : passer en colonne sur tablette/mobile */
+@media (max-width: 900px) {
+    .image-compare-wrapper {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .image-compare-wrapper .image-compare-section {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-compare-wrapper {
+        gap: 1rem;
+        padding: 0;
+    }
+}

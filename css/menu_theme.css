@@ -39,6 +39,7 @@
 .menu .slide {
     border-radius: 20px;
 }
+
 .menu .slide .item {
     position: absolute;
     border-radius: 20px;
@@ -60,7 +61,8 @@
     transition: all .5s;
 }
 
-.content{
+/* ========== CONTENT ========== */
+.content {
     height: 450px;
     width: 300px;
     /* From https://css.glass */
@@ -79,6 +81,8 @@
     .content {
         height: 400px;
         width: 260px;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
     }
 }
 
@@ -88,6 +92,8 @@
         width: 220px;
         padding-top: 5vh;
         padding-bottom: 5vh;
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
     }
 }
 
@@ -96,6 +102,8 @@
         height: 300px;
         width: 200px;
         padding: 3vh 1vw;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
     }
 }
 
@@ -110,10 +118,23 @@
     display: none;
 }
 
+@media (max-width: 768px) {
+    .item .content {
+        width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .item .content {
+        width: 200px;
+    }
+}
+
 .slide .item:nth-child(2) .content {
     display: block;
 }
 
+/* ========== CONTENT NAME ========== */
 .content .name {
     font-size: 40px;
     text-transform: uppercase;
@@ -123,6 +144,25 @@
     animation: animate 1s ease-in-out 1 forwards;
 }
 
+@media (max-width: 1024px) {
+    .content .name {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content .name {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content .name {
+        font-size: 24px;
+    }
+}
+
+/* ========== CONTENT DESCRIPTION ========== */
 .content .des {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -133,9 +173,6 @@
 }
 
 @media (max-width: 1024px) {
-    .content .name {
-        font-size: 32px;
-    }
     .content .des {
         width: 240px;
         margin-bottom: 15px;
@@ -143,26 +180,22 @@
 }
 
 @media (max-width: 768px) {
-    .content .name {
-        font-size: 28px;
-    }
     .content .des {
         width: 200px;
         margin-bottom: 12px;
-    }
-}
-
-@media (max-width: 480px) {
-    .content .name {
-        font-size: 24px;
-    }
-    .content .des {
-        width: 180px;
-        margin-bottom: 10px;
         font-size: 14px;
     }
 }
 
+@media (max-width: 480px) {
+    .content .des {
+        width: 180px;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+}
+
+/* ========== CONTENT BUTTON ========== */
 .content button {
     padding: 10px 20px;
     border: none;
@@ -173,6 +206,21 @@
     background-color: var(--pantone-3125);
     transition: all 0.5s;
     animation: animate 1s ease-in-out 0.6s 1 forwards;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .content button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
 }
 
 .content button:hover {
@@ -181,6 +229,7 @@
     border: solid 1.5px var(--pantone-3125);
 }
 
+/* ========== ANIMATIONS ========== */
 @keyframes animate {
     from {
         opacity: 0;
@@ -195,6 +244,7 @@
     }
 }
 
+/* ========== NAVIGATION BUTTONS ========== */
 .button {
     display: flex;
     flex-direction: row;
@@ -208,6 +258,27 @@
     bottom: 20px;
 }
 
+@media (max-width: 1024px) {
+    .button {
+        gap: 15px;
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        gap: 10px;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button {
+        gap: 8px;
+        bottom: 8px;
+    }
+}
+
 .button button {
     width: 40px;
     height: 35px;
@@ -219,6 +290,23 @@
     background-color: var(--pantone-3125);
 }
 
+@media (max-width: 768px) {
+    .button button {
+        width: 35px;
+        height: 30px;
+        margin: 0 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button button {
+        width: 30px;
+        height: 25px;
+        margin: 0 2px;
+        font-size: 12px;
+    }
+}
+
 .button button:hover {
     transform: scale(1.1);
     background-color: white;
@@ -228,23 +316,36 @@
 .next {
     padding: 0 0 0 3px;
 }
+
 .prev {
     padding: 0 3px 0 0;
 }
 
-/* ========== INDICATEURS (DOTS) ========== */
+/* ========== CAROUSEL INDICATORS ========== */
 .carousel-indicators {
     display: flex;
     justify-content: center;
     gap: 12px;
     margin-top: 2.5rem;
-}
-
-/*Carrousel indicators*/
-.carousel-indicators {
     text-align: center;
     position: relative;
     bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .carousel-indicators {
+        gap: 10px;
+        margin-top: 2rem;
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-indicators {
+        gap: 8px;
+        margin-top: 1.5rem;
+        bottom: 10px;
+    }
 }
 
 .dot {
@@ -259,11 +360,27 @@
     border: solid 1.5px var(--pantone-3125);
 }
 
+@media (max-width: 768px) {
+    .dot {
+        width: 8px;
+        height: 8px;
+        margin: 0 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dot {
+        width: 6px;
+        height: 6px;
+        margin: 0 3px;
+    }
+}
+
 .dot.active {
     background-color: var(--pantone-3125);
 }
 
-
+/* ========== SLIDE ITEMS ========== */
 .slide .item {
     display: none;
 }
