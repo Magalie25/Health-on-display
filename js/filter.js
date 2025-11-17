@@ -2,7 +2,7 @@ const pdfList = [
     // Panneaux 1
     { id: "pdf001", title: "No_9_Feeding_Babies_and_Young_Children", url: "https://www.spc.int/digitallibrary/get/jyhih", category: "Family and health /La famille en santé", decade: "2010s", theme: "family" },
     { id: "pdf002", title: "Family and Health and Healthy living display pannel", url: "https://www.spc.int/digitallibrary/get/utkna", category: "Healthy Living/ Hygiène de vie", decade: "2010s", theme: "healthy" },
-    { id: "pdf003", title: "Aron tararuaakin te aoraki ae te tioka", url: "https://www.spc.int/digitallibrary/get/meazi", category: "Healthy Living/ Hygiène de vie", decade: "2010s", theme: "healthy" },
+    { id: "pdf003", title: "A Child when we are ready", url: "https://www.spc.int/digitallibrary/get/meazi", category: "Healthy Living/ Hygiène de vie", decade: "2010s", theme: "healthy" },
     { id: "pdf004", title: "Affiche MNT (1) - This is how diabetes starts", url: "https://www.spc.int/digitallibrary/get/x63ms", category: "Healthy Living/ Hygiène de vie", decade: "2010s", theme: "healthy" },
     { id: "pdf005", title: "Affiche MNT (2) - Don't give in to diabetes", url: "https://www.spc.int/digitallibrary/get/sbnwo", category: "Healthy Living/ Hygiène de vie", decade: "2010s", theme: "healthy" },
     { id: "pdf006", title: "Affiche MNT (4) - Don't give in to diabetes", url: "https://www.spc.int/digitallibrary/get/9gk5c", category: "Healthy Living/ Hygiène de vie", decade: "2010s", theme: "healthy" },

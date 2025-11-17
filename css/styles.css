@@ -349,7 +349,7 @@ header p {
 
 .tooltiptext {
     visibility: hidden;
-    width: 15rem;
+    width:16rem;
     bottom: 100%;
     left: 50%;
     right: 50%;
@@ -359,7 +359,7 @@ header p {
     text-align: center;
     border: #000000 1px solid;
     border-radius: 6px;
-    padding: 2px;
+    padding: 0.1rem;
     position: absolute;
     z-index: 1;
 }
@@ -749,9 +749,24 @@ iframe {
 }
 
 .pdf-grid iframe {
-    width: 300px !important;
-    height: 420px !important;
+    height: 35.6rem!important;
     border-radius: 8px;
+    padding: 1rem;
+    .pdf-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.poster{
+    width: 30rem; 
+    height: 45rem; 
+    margin: 0 auto
+}
+
+@media (max-width: 600px) { 
+    .poster { 
+        width: 100%; 
+        height: 35.5rem;}
     .pdf-grid {
         grid-template-columns: 1fr;
     }

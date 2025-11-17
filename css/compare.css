@@ -2,8 +2,8 @@
 * { box-sizing: border-box; }
 
 .image-compare-section {
-    width: 345px;
-    height: 512px;
+    width: 15rem;
+    height: 35rem;
     margin: 0 auto;
 }
 
@@ -20,7 +20,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 35rem;
 }
 
 /* the top layer that will be resized by JS */
@@ -30,11 +30,6 @@
     height: 100%;
     border: 0;
     display: block;
-}
-
-/* make iframe fill its layer */
-.img-comp-img iframe {
-    width: 100%;
 }
 
 /* slider handle */

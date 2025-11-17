@@ -342,7 +342,6 @@
 }
 
 .newsletters-content {
-    max-width: min(1300px, 95vw);
     width: 100%;
     padding: clamp(1rem, 3vw, 2rem);
 }
@@ -394,6 +393,7 @@
 .newsletter-card p {
     font-size: clamp(0.9rem, 1.5vw, 1rem);
     line-height: 1.5;
+    text-align: justify;
 }
 
 .newsletter-card h4 a {
@@ -527,4 +527,10 @@
     .newsletter-card {
         padding: 1rem;
     }
+}
+
+/*Bulletin*/
+.card-img img {
+    width: 150px;
+    height: auto;
 }
