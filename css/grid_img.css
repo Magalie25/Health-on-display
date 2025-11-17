@@ -1,8 +1,6 @@
 /* PDF Grid Container */
 .pdf-grid-container {
     width: 100%;
-    padding: 2rem 1rem;
-    margin: 2rem 0;
 }
 
 .pdf-grid-row {
